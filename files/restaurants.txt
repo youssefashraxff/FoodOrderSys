@@ -1,0 +1,15 @@
+1|Koshary House|5 Tahrir Square, Cairo|01234567891|4.5|Egyptian
+2|Falafel Corner|10 Ramses Street, Cairo|01234567892|4.4|Egyptian
+3|Shawarma Express|15 Zamalek Road, Cairo|01234567893|4.6|Middle Eastern
+4|Grill Master|20 Nasr City, Cairo|01234567894|4.3|Grill
+5|Feteer Palace|30 Maadi Ring Road, Cairo|01234567895|4.5|Bakery
+6|Sweet Oasis|35 Heliopolis Boulevard, Cairo|01234567896|4.7|Desserts
+7|Cafe Nil|40 Garden City, Cairo|01234567897|4.2|Seafood
+8|Pyramids Feast|50 Giza Plateau, Cairo|01234567898|4.8|Traditional
+9|Baklava Heaven|45 Downtown, Cairo|01234567899|4.6|Middle Eastern
+10|McDonald's|100 City Stars Mall, Cairo|01234567900|4.1|Fast Food
+11|KFC|101 Mall of Egypt, Cairo|01234567901|4.2|Fast Food
+12|Pizza Hut|102 Mall of Arabia, Cairo|01234567902|4.3|Fast Food
+13|Hardee's|103 Zamalek, Cairo|01234567903|4.0|Fast Food
+14|Costa Coffee|104 New Cairo, Cairo|01234567904|4.5|Cafe
+15|Dunkin' Donuts|105 Heliopolis, Cairo|01234567905|4.4|Cafe
