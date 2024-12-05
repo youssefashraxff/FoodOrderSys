@@ -1,6 +1,7 @@
 package main.foodsys;
 import java.util.Scanner;
 import user.*;
+import Restaurant.*;
 
 public class foodSys
 {
@@ -54,6 +55,9 @@ public class foodSys
 
                 User.addUser(username, email, password, address);
                 System.out.println("User registered successfully!");
+                displayRestaurants display = new displayRestaurants();
+                int rest_choice=displayMenu.chooseRestaurant();
+                displayMenu.displayMenuOfRestaurant(rest_choice);
 
             } else if (choice == 2) {
                 boolean validInput = false;
@@ -63,8 +67,11 @@ public class foodSys
                     System.out.println("Enter your password: ");
                     password = input.nextLine();
 
-                    if (User.cheackusernameandpassword(username, password)) {
+                    if (User.checkLogin(username, password)) {
                         System.out.println("Login is successful");
+                        displayRestaurants display = new displayRestaurants();
+                        int rest_choice=displayMenu.chooseRestaurant();
+                        displayMenu.displayMenuOfRestaurant(rest_choice);
                         validInput = true;
                     } else {
                         System.out.println("Your username or password is incorrect");

@@ -1,11 +1,13 @@
-package Menu;
+package Restaurant_menu;
 
-public class menu{
+public class menuItems {
+    private int Rest_Id;
     private String name;
     private String description;
     private double price;
 
-    public menu(String name, String description, double price) {
+    public menuItems(int Rest_Id, String name,  double price,String description) {
+        this.Rest_Id = Rest_Id;
         this.name = name;
         this.description = description;
         this.price = price;

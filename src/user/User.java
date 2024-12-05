@@ -1,6 +1,5 @@
 package user;
 import fileHandling.fileHandle;
-
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -63,7 +62,7 @@ public class User {
         return check;
     }
 
-    public static boolean cheackusernameandpassword(String username, String password) {
+    public static boolean checkLogin(String username, String password) {
         boolean check = false;
         for (User user : users) {
             if ((user.getUsername()).equals(username) && (user.getPassword()).equals(password)) {

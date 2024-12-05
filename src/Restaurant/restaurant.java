@@ -1,20 +1,28 @@
 package Restaurant;
+import Restaurant_menu.*;
+import fileHandling.fileHandle;
+import java.util.ArrayList;
 
 public class restaurant {
+    private int Id;
     private String name;
     private String address;
     private String contact;
     private double rating;
     private String category;
+    private ArrayList<menuItems> items;
 
-
-
-    public restaurant(String name, String address, String contact, double rating, String category) {
+    public restaurant(int Id,String name, String address, String contact, double rating, String category, ArrayList<menuItems> items) {
+        this.Id = Id;
         this.name = name;
         this.address = address;
         this.contact = contact;
         this.rating = rating;
         this.category = category;
+        items = fileHandle.readMenuItemsFromFile(Id);
+    }
+    public int getId() {
+        return Id;
     }
     public String getName() {
         return name;
@@ -47,6 +55,17 @@ public class restaurant {
     }
     public void setCategory(String category) {
         this.category = category;
+    }
+    public ArrayList<menuItems> getItems() {
+        return items;
+    }
+
+    public void viewMenu()
+    {
+        for(menuItems item:items)
+        {
+            System.out.println(item);
+        }
     }
 }
 
