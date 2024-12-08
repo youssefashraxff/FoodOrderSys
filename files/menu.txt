@@ -1,48 +1,82 @@
-1|Classic Koshary|35.00|Traditional Egyptian koshary with lentils, rice, and pasta.
-1|Spicy Koshary|40.00|Koshary with a spicy tomato sauce and extra fried onions.
-1|Extra Chickpeas|5.00|A side of chickpeas to enhance your koshary.
-1|Tahini Sauce|3.00|Creamy tahini sauce for your meal.
-2|Falafel Sandwich|15.00|Fresh falafel in pita bread with tahini sauce.
-2|Hummus Plate|25.00|Creamy hummus served with warm bread.
-2|Foul Sandwich|12.00|Traditional Egyptian fava bean sandwich.
-2|Falafel Platter|30.00|A platter of falafel served with salad and dips.
-3|Chicken Shawarma Wrap|50.00|Grilled chicken shawarma with garlic sauce.
-3|Beef Shawarma Platter|60.00|Beef shawarma served with rice and salad.
-3|Vegetarian Shawarma|45.00|Grilled veggies wrapped in flatbread.
-3|Shawarma Fries|20.00|Fries topped with shawarma meat and sauce.
-4|Mixed Grill Platter|120.00|Selection of kebabs, kofta, and grilled chicken.
-4|Grilled Lamb Chops|150.00|Tender lamb chops marinated in spices.
-4|Grilled Chicken Wings|70.00|Chicken wings seasoned and grilled to perfection.
-4|Beef Kofta|80.00|Traditional Egyptian kofta served with rice.
-5|Cheese Feteer|45.00|Flaky feteer stuffed with cheese.
-5|Honey and Cream Feteer|50.00|Sweet feteer with honey and clotted cream.
-5|Nutella Feteer|60.00|Flaky feteer with Nutella spread.
-5|Sausage Feteer|55.00|Savory feteer stuffed with sausage and cheese.
-6|Kunafa|30.00|Traditional kunafa with nuts and syrup.
-6|Baklava|25.00|Layers of pastry with nuts and honey.
-6|Basbousa|20.00|Semolina cake soaked in syrup.
-6|Rice Pudding|15.00|Creamy rice pudding with cinnamon topping.
-7|Nile Fish Tagine|80.00|Tagine-style fish cooked with vegetables and spices.
-7|Stuffed Pigeon|70.00|Stuffed pigeon with rice and herbs.
-7|Grilled Tilapia|90.00|Whole tilapia grilled with spices.
-7|Fried Calamari|85.00|Crispy calamari served with tartar sauce.
-8|Molokhia|60.00|Molokhia served with rice and chicken.
-8|Stuffed Vine Leaves|50.00|Vine leaves stuffed with rice and spices.
-8|Fattah|75.00|Layered rice and bread with garlic and tomato sauce.
-8|Roasted Duck|90.00|Duck roasted with Egyptian spices.
-10|Big Mac Meal|100.00|Classic Big Mac with fries and a drink.
-10|McChicken Sandwich|90.00|Crispy chicken sandwich with lettuce and mayo.
-10|Filet-O-Fish|80.00|Fish fillet sandwich with tartar sauce.
-10|Apple Pie|25.00|Crispy fried pastry with apple filling.
-11|Zinger Box|85.00|KFC Zinger sandwich with fries and drink.
-11|Chicken Bucket|150.00|Fried chicken bucket with 10 pieces.
-11|Hot Wings|70.00|Spicy fried chicken wings.
-11|Popcorn Chicken|60.00|Bite-sized crispy chicken pieces.
-12|Pepperoni Pizza|120.00|Pizza Hut's classic pepperoni pizza.
-12|Cheese Lovers Pizza|110.00|Cheese-filled crust pizza with extra cheese.
-12|Supreme Pizza|130.00|Pizza topped with vegetables, meat, and cheese.
-12|Garlic Bread|40.00|Toasted garlic bread with cheese.
-15|Glazed Donut|20.00|Classic Dunkin' Donuts glazed donut.
-15|Chocolate Donut|25.00|Rich chocolate donut with sprinkles.
-15|Iced Coffee|40.00|Refreshing iced coffee with cream.
-15|Muffin Combo|50.00|A muffin with a coffee of your choice.
+1|Classic Koshary|35.00|Traditional Egyptian koshary with lentils, rice, and pasta.|Main Item
+1|Spicy Koshary|40.00|Koshary with a spicy tomato sauce and extra fried onions.|Main Item
+1|Extra Chickpeas|5.00|A side of chickpeas to enhance your koshary.|Sides
+1|Tahini Sauce|3.00|Creamy tahini sauce for your meal.|Sides
+2|Falafel Sandwich|15.00|Fresh falafel in pita bread with tahini sauce.|Main Item
+2|Hummus Plate|25.00|Creamy hummus served with warm bread.|Main Item
+2|Foul Sandwich|12.00|Traditional Egyptian fava bean sandwich.|Main Item
+2|Falafel Platter|30.00|A platter of falafel served with salad and dips.|Appetizers
+3|Chicken Shawarma Wrap|50.00|Grilled chicken shawarma with garlic sauce.|Main Item
+3|Beef Shawarma Platter|60.00|Beef shawarma served with rice and salad.|Main Item
+3|Vegetarian Shawarma|45.00|Grilled veggies wrapped in flatbread.|Main Item
+3|Shawarma Fries|20.00|Fries topped with shawarma meat and sauce.|Sides
+4|Mixed Grill Platter|120.00|Selection of kebabs, kofta, and grilled chicken.|Main Item
+4|Grilled Lamb Chops|150.00|Tender lamb chops marinated in spices.|Main Item
+4|Grilled Chicken Wings|70.00|Chicken wings seasoned and grilled to perfection.|Main Item
+4|Beef Kofta|80.00|Traditional Egyptian kofta served with rice.|Main Item
+5|Cheese Feteer|45.00|Flaky feteer stuffed with cheese.|Main Item
+5|Honey and Cream Feteer|50.00|Sweet feteer with honey and clotted cream.|Main Item
+5|Nutella Feteer|60.00|Flaky feteer with Nutella spread.|Main Item
+5|Sausage Feteer|55.00|Savory feteer stuffed with sausage and cheese.|Main Item
+6|Kunafa|30.00|Traditional kunafa with nuts and syrup.|Main Item
+6|Baklava|25.00|Layers of pastry with nuts and honey.|Main Item
+6|Basbousa|20.00|Semolina cake soaked in syrup.|Main Item
+6|Rice Pudding|15.00|Creamy rice pudding with cinnamon topping.|Main Item
+7|Nile Fish Tagine|80.00|Tagine-style fish cooked with vegetables and spices.|Main Item
+7|Stuffed Pigeon|70.00|Stuffed pigeon with rice and herbs.|Main Item
+7|Grilled Tilapia|90.00|Whole tilapia grilled with spices.|Main Item
+7|Fried Calamari|85.00|Crispy calamari served with tartar sauce.|Main Item
+8|Molokhia|60.00|Molokhia served with rice and chicken.|Main Item
+8|Stuffed Vine Leaves|50.00|Vine leaves stuffed with rice and spices.|Main Item
+8|Fattah|75.00|Layered rice and bread with garlic and tomato sauce.|Main Item
+8|Roasted Duck|90.00|Duck roasted with Egyptian spices.|Main Item
+10|Big Mac Meal|100.00|Classic Big Mac with fries and a drink.|Main Item
+10|McChicken Sandwich|90.00|Crispy chicken sandwich with lettuce and mayo.|Main Item
+10|Filet-O-Fish|80.00|Fish fillet sandwich with tartar sauce.|Main Item
+10|Apple Pie|25.00|Crispy fried pastry with apple filling.|Main Item
+11|Zinger Box|85.00|KFC Zinger sandwich with fries and drink.|Main Item
+11|Chicken Bucket|150.00|Fried chicken bucket with 10 pieces.|Main Item
+11|Hot Wings|70.00|Spicy fried chicken wings.|Main Item
+11|Popcorn Chicken|60.00|Bite-sized crispy chicken pieces.|Main Item
+12|Pepperoni Pizza|120.00|Pizza Hut's classic pepperoni pizza.|Main Item
+12|Cheese Lovers Pizza|110.00|Cheese-filled crust pizza with extra cheese.|Main Item
+12|Supreme Pizza|130.00|Pizza topped with vegetables, meat, and cheese.|Main Item
+12|Garlic Bread|40.00|Toasted garlic bread with cheese.|Main Item
+15|Glazed Donut|20.00|Classic Dunkin' Donuts glazed donut.|Main Item
+15|Chocolate Donut|25.00|Rich chocolate donut with sprinkles.|Main Item
+15|Iced Coffee|40.00|Refreshing iced coffee with cream.|Main Item
+15|Muffin Combo|50.00|A muffin with a coffee of your choice.|Main Item
+1|Stuffed Grape Leaves|25.00|Delicate grape leaves stuffed with rice and spices.|Appetizers
+2|Hummus Plate|20.00|Creamy hummus served with fresh pita bread.|Appetizers
+1|Garlic Bread|10.00|Crispy bread with a garlic butter spread.|Sides
+2|Seasoned Fries|12.00|Golden fries with a mix of savory seasonings.|Sides
+1|Lemon Mint Juice|15.00|Refreshing lemon juice with a hint of mint.|Drinks
+2|Turkish Coffee|10.00|Rich, aromatic Turkish coffee.|Drinks
+1|Bruschetta|18.00|Grilled bread with a fresh tomato and basil topping.|Appetizers
+2|Spring Rolls|22.00|Crispy rolls filled with vegetables.|Appetizers
+3|Stuffed Mushrooms|25.00|Mushrooms stuffed with cheese and herbs.|Appetizers
+1|Coleslaw|8.00|Fresh shredded cabbage and carrots in a creamy dressing.|Sides
+2|Mashed Potatoes|12.00|Creamy mashed potatoes with butter.|Sides
+3|Cheese Sticks|15.00|Fried cheese sticks served with marinara sauce.|Sides
+1|Iced Tea|10.00|Chilled tea with a hint of lemon.|Drinks
+2|Mango Smoothie|15.00|Creamy mango blended with yogurt.|Drinks
+3|Espresso|12.00|Strong and bold espresso shot.|Drinks
+1|Strawberry Milkshake|18.00|Fresh strawberries blended with ice cream.|Drinks
+2|Herbal Tea|12.00|A soothing mix of herbal flavors.|Drinks
+1|Caprese Salad|30.00|Tomato, mozzarella, and basil with olive oil.|Appetizers
+2|Garlic Shrimp|35.00|Shrimp cooked with garlic and herbs.|Appetizers
+3|Mini Tacos|28.00|Small tacos filled with seasoned meat.|Appetizers
+4|Vegetable Tempura|26.00|Lightly battered and fried vegetables.|Appetizers
+5|Mozzarella Balls|20.00|Cheese balls fried to perfection.|Appetizers
+1|Onion Rings|15.00|Crispy battered onion rings.|Sides
+2|Rice Pilaf|18.00|Fluffy rice with herbs.|Sides
+3|Sweet Potato Fries|20.00|Crispy and lightly salted.|Sides
+4|Steamed Vegetables|18.00|Fresh veggies lightly steamed.|Sides
+5|Baked Potato|16.00|Topped with butter and sour cream.|Sides
+1|Peach Iced Tea|12.00|Iced tea with a peach twist.|Drinks
+2|Vanilla Latte|20.00|Rich espresso with vanilla.|Drinks
+3|Coconut Water|15.00|Refreshing and natural.|Drinks
+4|Sparkling Lemonade|12.00|Lemonade with sparkling water.|Drinks
+5|Hot Chocolate|18.00|Rich cocoa with whipped cream.|Drinks
+1|Green Smoothie|18.00|Healthy blend of spinach, banana, and apple.|Drinks
+2|Berry Blast Smoothie|20.00|Mixed berries with yogurt.|Drinks

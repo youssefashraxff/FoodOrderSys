@@ -99,7 +99,7 @@ public class fileHandle {
                     items.add(new menuItems(Integer.parseInt(Item_info[0]),
                             Item_info[1],
                             Double.parseDouble(Item_info[2]),
-                            Item_info[3]));
+                            Item_info[3],Item_info[4]));
                 }
                 line = br.readLine();
             }

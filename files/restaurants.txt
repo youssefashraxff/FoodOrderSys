@@ -13,3 +13,10 @@
 13|Hardee's|103 Zamalek, Cairo|01234567903|4.0|Fast Food
 14|Costa Coffee|104 New Cairo, Cairo|01234567904|4.5|Cafe
 15|Dunkin' Donuts|105 Heliopolis, Cairo|01234567905|4.4|Cafe
+16|La Bella Vita|50 Italian St, Cairo|01234567896|4.7|Italian
+17|World Flavors|100 International Ave, Cairo|01234567897|4.8|International
+18|Pasta Paradise|60 Gourmet St, Cairo|01234567898|4.7|Italian
+19|Pizza Roma|45 Italian Ave, Cairo|01234567899|4.8|Italian
+20|The Global Table|90 World Plaza, Cairo|01234567890|4.9|International
+21|Fusion Bistro|20 Cuisine Blvd, Cairo|01234567891|4.6|International
+22|Mediterranean Marvel|15 Blue Coast, Cairo|01234567892|4.7|International
