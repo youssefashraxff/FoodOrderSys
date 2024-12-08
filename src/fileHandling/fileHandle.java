@@ -61,6 +61,7 @@ public class fileHandle {
     public static ArrayList<restaurant> readRestaurantFromFile()
     {
         ArrayList<restaurant> restaurants = new ArrayList<>();
+        ArrayList<menuItems> items;
         try
         {
             FileReader restaurantFile = new FileReader(RestaurantFilePath);
@@ -69,11 +70,16 @@ public class fileHandle {
             while (line != null)
             {
                 String Rest_info[] = line.split("\\|");
-                restaurants.add(new restaurant(Integer.parseInt(Rest_info[0]),
-                        Rest_info[1],Rest_info[2],Rest_info[3],
-                        Double.parseDouble(Rest_info[4]),Rest_info[5],readMenuItemsFromFile(Integer.parseInt(Rest_info[0]))));
+                int Id = Integer.parseInt(Rest_info[0]);
+                String Name = Rest_info[1];
+                String Address = Rest_info[2];
+                String Contact = Rest_info[3];
+                double Rating = Double.parseDouble(Rest_info[4]);
+                String Category = Rest_info[5];
+                restaurants.add(new restaurant(Id,Name,Address,Contact,Rating,Category));
                 line = br.readLine();
             }
+
             br.close();
             restaurantFile.close();
         }
@@ -93,13 +99,15 @@ public class fileHandle {
             String line = br.readLine();
             while (line != null)
             {
-                String Item_info [] = line.split("\\|");
-                if((Integer.parseInt(Item_info[0]))==Rest_Id)
+                String[] Item_info = line.split("\\|");
+                int Id = Integer.parseInt(Item_info[0]);
+                if(Id==Rest_Id)
                 {
-                    items.add(new menuItems(Integer.parseInt(Item_info[0]),
-                            Item_info[1],
-                            Double.parseDouble(Item_info[2]),
-                            Item_info[3],Item_info[4]));
+                    String Name = Item_info[1];
+                    String Description = Item_info[3];
+                    double Price = Double.parseDouble(Item_info[2]);
+                    String Category = Item_info[4];
+                    items.add(new menuItems(Id, Name, Price, Description, Category));
                 }
                 line = br.readLine();
             }

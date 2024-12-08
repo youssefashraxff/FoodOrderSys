@@ -13,7 +13,7 @@ public class User {
     static List<User> users = fileHandle.readUsersFromFile();
     public static int counter = 0;
 
-    public User(String username, String password, String email, String deliveryAddress) {
+    public User(String username,String email,String password,String deliveryAddress) {
         this.username = username;
         this.password = password;
         this.email = email;

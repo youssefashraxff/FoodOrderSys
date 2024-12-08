@@ -12,14 +12,14 @@ public class restaurant {
     private String category;
     private ArrayList<menuItems> items;
 
-    public restaurant(int Id,String name, String address, String contact, double rating, String category, ArrayList<menuItems> items) {
+    public restaurant(int Id,String name, String address, String contact, double rating, String category) {
         this.Id = Id;
         this.name = name;
         this.address = address;
         this.contact = contact;
         this.rating = rating;
         this.category = category;
-        items = fileHandle.readMenuItemsFromFile(Id);
+        //items = fileHandle.readMenuItemsFromFile(Id);
     }
     public int getId() {
         return Id;

@@ -2,11 +2,13 @@ package Restaurant;
 import fileHandling.fileHandle;
 import java.util.ArrayList;
 
-public class displayRestaurants {
-    private static ArrayList<restaurant> restaurants;
-    public displayRestaurants() {
-        restaurants = fileHandle.readRestaurantFromFile();
-        for (restaurant r : restaurants) {
+public class displayRestaurants
+{
+    private static final ArrayList<restaurant> restaurants=fileHandle.readRestaurantFromFile();
+    public static void displayRestaurantss()
+    {
+        for (restaurant r : restaurants)
+        {
             System.out.println("\n=========================\n");
             System.out.println("Name: " + r.getName());
             System.out.println("Address: " + r.getAddress());
@@ -16,6 +18,6 @@ public class displayRestaurants {
         }
     }
     public static ArrayList<restaurant> getRestaurants() {
-        return restaurants=fileHandle.readRestaurantFromFile();
+        return restaurants;
     }
 }

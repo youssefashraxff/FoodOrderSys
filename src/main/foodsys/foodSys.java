@@ -5,13 +5,13 @@ import Restaurant.*;
 
 public class foodSys
 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         while (true) {
             String username = "";
             String email = "";
-            String password = "";
-            String address = "";
+            String password;
+            String address;
 
             System.out.println("\n1. Register");
             System.out.println("2. Login");
@@ -55,7 +55,7 @@ public class foodSys
 
                 User.addUser(username, email, password, address);
                 System.out.println("User registered successfully!");
-                displayRestaurants display = new displayRestaurants();
+                displayRestaurants.displayRestaurantss();
                 int rest_choice=displayMenu.chooseRestaurant();
                 displayMenu.displayMenuOfRestaurant(rest_choice);
 
@@ -69,7 +69,7 @@ public class foodSys
 
                     if (User.checkLogin(username, password)) {
                         System.out.println("Login is successful");
-                        displayRestaurants display = new displayRestaurants();
+                        displayRestaurants.displayRestaurantss();
                         int rest_choice=displayMenu.chooseRestaurant();
                         displayMenu.displayMenuOfRestaurant(rest_choice);
                         validInput = true;
