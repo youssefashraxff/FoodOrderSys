@@ -14,21 +14,21 @@ public class displayMenu {
     }
     public static void displayMenuOfRestaurant(int Rest_id) {
         ArrayList<menuItems> menu = fileHandle.readMenuItemsFromFile(Rest_id);
-        System.out.println("\nMain Item");
+        System.out.println("\n>>> Main Item");
         for (menuItems item : menu) {
-            if (item.getCategory().equals(">>> Main Item")) {
+            if (item.getCategory().equals("Main Item")) {
                 displayMenu_attributes(item);
             }
         }
-        System.out.println("\nSides");
+        System.out.println("\n>>> Sides");
         for (menuItems item : menu) {
-            if (item.getCategory().equals(">>> Sides")) {
+            if (item.getCategory().equals("Sides")) {
                 displayMenu_attributes(item);
             }
         }
-        System.out.println("\nDrinks");
+        System.out.println("\n>>> Drinks");
         for (menuItems item : menu) {
-            if (item.getCategory().equals(">>> Beverages")) {
+            if (item.getCategory().equals("Beverages")) {
                 displayMenu_attributes(item);
             }
         }
