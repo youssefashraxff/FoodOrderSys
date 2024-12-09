@@ -1,97 +1,220 @@
-1|Specialty Dish|60.00|Signature dish of the house.|Main Item
-1|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-1|House Beverage|20.00|Refreshing house-made drink.|Beverages
-1|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-1|Dessert Platter|30.00|An assortment of desserts.|Desserts
-2|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-2|Specialty Dish|60.00|Signature dish of the house.|Main Item
-2|Classic Dish|50.00|A timeless favorite.|Main Item
-2|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-2|Dessert Platter|30.00|An assortment of desserts.|Desserts
-2|House Beverage|20.00|Refreshing house-made drink.|Beverages
-3|Classic Dish|50.00|A timeless favorite.|Main Item
-3|Specialty Dish|60.00|Signature dish of the house.|Main Item
-3|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-3|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-3|House Beverage|20.00|Refreshing house-made drink.|Beverages
-4|Classic Dish|50.00|A timeless favorite.|Main Item
-4|Specialty Dish|60.00|Signature dish of the house.|Main Item
-4|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-4|Dessert Platter|30.00|An assortment of desserts.|Desserts
-4|House Beverage|20.00|Refreshing house-made drink.|Beverages
-5|House Beverage|20.00|Refreshing house-made drink.|Beverages
-5|Dessert Platter|30.00|An assortment of desserts.|Desserts
-5|Classic Dish|50.00|A timeless favorite.|Main Item
-5|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-5|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-6|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-6|Specialty Dish|60.00|Signature dish of the house.|Main Item
-6|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-7|Classic Dish|50.00|A timeless favorite.|Main Item
-7|House Beverage|20.00|Refreshing house-made drink.|Beverages
-7|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-7|Dessert Platter|30.00|An assortment of desserts.|Desserts
-7|Specialty Dish|60.00|Signature dish of the house.|Main Item
-7|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-8|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-8|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-8|House Beverage|20.00|Refreshing house-made drink.|Beverages
-8|Classic Dish|50.00|A timeless favorite.|Main Item
-8|Specialty Dish|60.00|Signature dish of the house.|Main Item
-9|Classic Dish|50.00|A timeless favorite.|Main Item
-9|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-9|Specialty Dish|60.00|Signature dish of the house.|Main Item
-10|Classic Dish|50.00|A timeless favorite.|Main Item
-10|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-10|House Beverage|20.00|Refreshing house-made drink.|Beverages
-11|Dessert Platter|30.00|An assortment of desserts.|Desserts
-11|House Beverage|20.00|Refreshing house-made drink.|Beverages
-11|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-12|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-12|Classic Dish|50.00|A timeless favorite.|Main Item
-12|House Beverage|20.00|Refreshing house-made drink.|Beverages
-12|Specialty Dish|60.00|Signature dish of the house.|Main Item
-12|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-13|House Beverage|20.00|Refreshing house-made drink.|Beverages
-13|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-13|Dessert Platter|30.00|An assortment of desserts.|Desserts
-13|Specialty Dish|60.00|Signature dish of the house.|Main Item
-14|House Beverage|20.00|Refreshing house-made drink.|Beverages
-14|Specialty Dish|60.00|Signature dish of the house.|Main Item
-14|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-14|Dessert Platter|30.00|An assortment of desserts.|Desserts
-14|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-15|Specialty Dish|60.00|Signature dish of the house.|Main Item
-15|House Beverage|20.00|Refreshing house-made drink.|Beverages
-15|Classic Dish|50.00|A timeless favorite.|Main Item
-15|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-16|Dessert Platter|30.00|An assortment of desserts.|Desserts
-16|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-16|House Beverage|20.00|Refreshing house-made drink.|Beverages
-16|Classic Dish|50.00|A timeless favorite.|Main Item
-16|Specialty Dish|60.00|Signature dish of the house.|Main Item
-17|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-17|Dessert Platter|30.00|An assortment of desserts.|Desserts
-17|House Beverage|20.00|Refreshing house-made drink.|Beverages
-17|Classic Dish|50.00|A timeless favorite.|Main Item
-18|Specialty Dish|60.00|Signature dish of the house.|Main Item
-18|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-18|House Beverage|20.00|Refreshing house-made drink.|Beverages
-18|Dessert Platter|30.00|An assortment of desserts.|Desserts
-18|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-18|Classic Dish|50.00|A timeless favorite.|Main Item
-19|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-19|Classic Dish|50.00|A timeless favorite.|Main Item
-19|Dessert Platter|30.00|An assortment of desserts.|Desserts
-20|House Beverage|20.00|Refreshing house-made drink.|Beverages
-20|Specialty Dish|60.00|Signature dish of the house.|Main Item
-20|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-20|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-20|Dessert Platter|30.00|An assortment of desserts.|Desserts
-21|House Beverage|20.00|Refreshing house-made drink.|Beverages
-21|Dessert Platter|30.00|An assortment of desserts.|Desserts
-21|Classic Dish|50.00|A timeless favorite.|Main Item
-22|Chef's Special Sauce|10.00|Adds a burst of flavor.|Sides
-22|Vegetarian Delight|45.00|Perfect for vegetarians.|Main Item
-22|Specialty Dish|60.00|Signature dish of the house.|Main Item
-22|Dessert Platter|30.00|An assortment of desserts.|Desserts
+1|Koshary|78.00|A delicious main course crafted with fresh ingredients.|Main Item
+1|Molokhia|40.00|A signature item known for its rich flavors and textures.|Main Item
+1|Stuffed Pigeon|51.00|A delicious main course crafted with fresh ingredients.|Main Item
+1|Hawawshi|77.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+1|Fried Eggplant|40.00|A light and tasty addition to your dining experience.|Sides
+1|Pickles|25.00|A perfect accompaniment to your meal.|Sides
+1|Hibiscus Drink|46.00|Cool, crisp, and thirst-quenching.|Beverages
+1|Mint Lemonade|88.00|A delightful beverage to enhance your dining experience.|Beverages
+1|Basbousa|99.00|Rich, creamy, and utterly indulgent.|Desserts
+1|Konafa|23.00|A sweet treat to end your meal on a high note.|Desserts
+2|Koshary|66.00|A signature item known for its rich flavors and textures.|Main Item
+2|Molokhia|56.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+2|Stuffed Pigeon|52.00|A classic recipe loved by generations.|Main Item
+2|Hawawshi|97.00|A signature item known for its rich flavors and textures.|Main Item
+2|Fried Eggplant|34.00|Crispy, golden, and full of flavor.|Sides
+2|Pickles|51.00|A light and tasty addition to your dining experience.|Sides
+2|Hibiscus Drink|33.00|Cool, crisp, and thirst-quenching.|Beverages
+2|Mint Lemonade|68.00|A refreshing drink to pair with your meal.|Beverages
+2|Basbousa|46.00|Light, fluffy, and bursting with flavor.|Desserts
+2|Konafa|32.00|A sweet treat to end your meal on a high note.|Desserts
+3|Shawarma|35.00|A signature item known for its rich flavors and textures.|Main Item
+3|Kebab|40.00|A signature item known for its rich flavors and textures.|Main Item
+3|Falafel|67.00|A signature item known for its rich flavors and textures.|Main Item
+3|Mansaf|90.00|A delicious main course crafted with fresh ingredients.|Main Item
+3|Hummus|61.00|A side dish that complements any main course.|Sides
+3|Tabbouleh|27.00|A perfect accompaniment to your meal.|Sides
+3|Ayran|50.00|A refreshing drink to pair with your meal.|Beverages
+3|Arabic Coffee|37.00|A delightful beverage to enhance your dining experience.|Beverages
+3|Baklava|78.00|Rich, creamy, and utterly indulgent.|Desserts
+3|Halva|24.00|A dessert that satisfies every sweet tooth.|Desserts
+4|BBQ Ribs|94.00|A delicious main course crafted with fresh ingredients.|Main Item
+4|Grilled Chicken|44.00|A delicious main course crafted with fresh ingredients.|Main Item
+4|Steak|43.00|A signature item known for its rich flavors and textures.|Main Item
+4|Lamb Chops|35.00|A classic recipe loved by generations.|Main Item
+4|Corn on the Cob|45.00|A perfect accompaniment to your meal.|Sides
+4|Coleslaw|42.00|A perfect accompaniment to your meal.|Sides
+4|Iced Tea|72.00|Cool, crisp, and thirst-quenching.|Beverages
+4|Soda|88.00|Cool, crisp, and thirst-quenching.|Beverages
+4|Brownies|28.00|Light, fluffy, and bursting with flavor.|Desserts
+4|Cheesecake|34.00|Rich, creamy, and utterly indulgent.|Desserts
+5|Cheese Pie|64.00|A signature item known for its rich flavors and textures.|Main Item
+5|Spinach Pie|37.00|A signature item known for its rich flavors and textures.|Main Item
+5|Croissant|57.00|A classic recipe loved by generations.|Main Item
+5|Baguette|76.00|A delicious main course crafted with fresh ingredients.|Main Item
+5|Butter|80.00|A side dish that complements any main course.|Sides
+5|Jam|62.00|A side dish that complements any main course.|Sides
+5|Hot Chocolate|25.00|Perfectly chilled and full of flavor.|Beverages
+5|Espresso|59.00|A refreshing drink to pair with your meal.|Beverages
+5|Danish|32.00|A sweet treat to end your meal on a high note.|Desserts
+5|Eclair|24.00|A dessert that satisfies every sweet tooth.|Desserts
+6|Pizza|84.00|A delicious main course crafted with fresh ingredients.|Main Item
+6|Burger|40.00|A signature item known for its rich flavors and textures.|Main Item
+6|Pasta|21.00|A signature item known for its rich flavors and textures.|Main Item
+6|Tacos|97.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+6|French Fries|93.00|Crispy, golden, and full of flavor.|Sides
+6|Garlic Bread|95.00|Crispy, golden, and full of flavor.|Sides
+6|Soda|77.00|A refreshing drink to pair with your meal.|Beverages
+6|Smoothie|57.00|Perfectly chilled and full of flavor.|Beverages
+6|Ice Cream|52.00|A dessert that satisfies every sweet tooth.|Desserts
+6|Tiramisu|48.00|Rich, creamy, and utterly indulgent.|Desserts
+7|Pizza|83.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+7|Burger|79.00|A classic recipe loved by generations.|Main Item
+7|Pasta|35.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+7|Tacos|66.00|A classic recipe loved by generations.|Main Item
+7|French Fries|99.00|A side dish that complements any main course.|Sides
+7|Garlic Bread|30.00|A side dish that complements any main course.|Sides
+7|Soda|45.00|Cool, crisp, and thirst-quenching.|Beverages
+7|Smoothie|73.00|Perfectly chilled and full of flavor.|Beverages
+7|Ice Cream|85.00|A dessert that satisfies every sweet tooth.|Desserts
+7|Tiramisu|94.00|A dessert that satisfies every sweet tooth.|Desserts
+8|Pizza|27.00|A signature item known for its rich flavors and textures.|Main Item
+8|Burger|59.00|A signature item known for its rich flavors and textures.|Main Item
+8|Pasta|22.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+8|Tacos|73.00|A delicious main course crafted with fresh ingredients.|Main Item
+8|French Fries|22.00|A perfect accompaniment to your meal.|Sides
+8|Garlic Bread|25.00|Crispy, golden, and full of flavor.|Sides
+8|Soda|89.00|Perfectly chilled and full of flavor.|Beverages
+8|Smoothie|99.00|A delightful beverage to enhance your dining experience.|Beverages
+8|Ice Cream|85.00|Light, fluffy, and bursting with flavor.|Desserts
+8|Tiramisu|93.00|Rich, creamy, and utterly indulgent.|Desserts
+9|Shawarma|27.00|A delicious main course crafted with fresh ingredients.|Main Item
+9|Kebab|58.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+9|Falafel|53.00|A delicious main course crafted with fresh ingredients.|Main Item
+9|Mansaf|95.00|A delicious main course crafted with fresh ingredients.|Main Item
+9|Hummus|25.00|A light and tasty addition to your dining experience.|Sides
+9|Tabbouleh|65.00|A side dish that complements any main course.|Sides
+9|Ayran|43.00|Perfectly chilled and full of flavor.|Beverages
+9|Arabic Coffee|82.00|Cool, crisp, and thirst-quenching.|Beverages
+9|Baklava|37.00|A dessert that satisfies every sweet tooth.|Desserts
+9|Halva|44.00|Light, fluffy, and bursting with flavor.|Desserts
+10|Pizza|96.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+10|Burger|78.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+10|Pasta|42.00|A signature item known for its rich flavors and textures.|Main Item
+10|Tacos|50.00|A signature item known for its rich flavors and textures.|Main Item
+10|French Fries|31.00|A side dish that complements any main course.|Sides
+10|Garlic Bread|99.00|A side dish that complements any main course.|Sides
+10|Soda|28.00|A delightful beverage to enhance your dining experience.|Beverages
+10|Smoothie|99.00|Perfectly chilled and full of flavor.|Beverages
+10|Ice Cream|95.00|Light, fluffy, and bursting with flavor.|Desserts
+10|Tiramisu|82.00|Rich, creamy, and utterly indulgent.|Desserts
+11|Pizza|25.00|A classic recipe loved by generations.|Main Item
+11|Burger|31.00|A classic recipe loved by generations.|Main Item
+11|Pasta|49.00|A delicious main course crafted with fresh ingredients.|Main Item
+11|Tacos|83.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+11|French Fries|34.00|Crispy, golden, and full of flavor.|Sides
+11|Garlic Bread|36.00|A light and tasty addition to your dining experience.|Sides
+11|Soda|39.00|Perfectly chilled and full of flavor.|Beverages
+11|Smoothie|95.00|Perfectly chilled and full of flavor.|Beverages
+11|Ice Cream|53.00|Rich, creamy, and utterly indulgent.|Desserts
+11|Tiramisu|39.00|A dessert that satisfies every sweet tooth.|Desserts
+12|Pizza|48.00|A classic recipe loved by generations.|Main Item
+12|Burger|93.00|A signature item known for its rich flavors and textures.|Main Item
+12|Pasta|93.00|A signature item known for its rich flavors and textures.|Main Item
+12|Tacos|38.00|A classic recipe loved by generations.|Main Item
+12|French Fries|49.00|A side dish that complements any main course.|Sides
+12|Garlic Bread|50.00|A perfect accompaniment to your meal.|Sides
+12|Soda|46.00|A delightful beverage to enhance your dining experience.|Beverages
+12|Smoothie|80.00|A refreshing drink to pair with your meal.|Beverages
+12|Ice Cream|81.00|Rich, creamy, and utterly indulgent.|Desserts
+12|Tiramisu|37.00|Light, fluffy, and bursting with flavor.|Desserts
+13|Pizza|35.00|A classic recipe loved by generations.|Main Item
+13|Burger|42.00|A delicious main course crafted with fresh ingredients.|Main Item
+13|Pasta|53.00|A delicious main course crafted with fresh ingredients.|Main Item
+13|Tacos|81.00|A classic recipe loved by generations.|Main Item
+13|French Fries|99.00|Crispy, golden, and full of flavor.|Sides
+13|Garlic Bread|74.00|A side dish that complements any main course.|Sides
+13|Soda|22.00|Cool, crisp, and thirst-quenching.|Beverages
+13|Smoothie|56.00|A delightful beverage to enhance your dining experience.|Beverages
+13|Ice Cream|39.00|Rich, creamy, and utterly indulgent.|Desserts
+13|Tiramisu|24.00|Light, fluffy, and bursting with flavor.|Desserts
+14|Pizza|37.00|A delicious main course crafted with fresh ingredients.|Main Item
+14|Burger|22.00|A signature item known for its rich flavors and textures.|Main Item
+14|Pasta|82.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+14|Tacos|68.00|A delicious main course crafted with fresh ingredients.|Main Item
+14|French Fries|30.00|Crispy, golden, and full of flavor.|Sides
+14|Garlic Bread|68.00|A side dish that complements any main course.|Sides
+14|Soda|44.00|A delightful beverage to enhance your dining experience.|Beverages
+14|Smoothie|80.00|A refreshing drink to pair with your meal.|Beverages
+14|Ice Cream|20.00|A dessert that satisfies every sweet tooth.|Desserts
+14|Tiramisu|64.00|A sweet treat to end your meal on a high note.|Desserts
+15|Pizza|22.00|A classic recipe loved by generations.|Main Item
+15|Burger|87.00|A classic recipe loved by generations.|Main Item
+15|Pasta|71.00|A classic recipe loved by generations.|Main Item
+15|Tacos|60.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+15|French Fries|36.00|Crispy, golden, and full of flavor.|Sides
+15|Garlic Bread|20.00|Crispy, golden, and full of flavor.|Sides
+15|Soda|64.00|A refreshing drink to pair with your meal.|Beverages
+15|Smoothie|25.00|A refreshing drink to pair with your meal.|Beverages
+15|Ice Cream|51.00|Light, fluffy, and bursting with flavor.|Desserts
+15|Tiramisu|80.00|A dessert that satisfies every sweet tooth.|Desserts
+16|Pizza|84.00|A delicious main course crafted with fresh ingredients.|Main Item
+16|Burger|73.00|A delicious main course crafted with fresh ingredients.|Main Item
+16|Pasta|51.00|A delicious main course crafted with fresh ingredients.|Main Item
+16|Tacos|100.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+16|French Fries|28.00|Crispy, golden, and full of flavor.|Sides
+16|Garlic Bread|71.00|A light and tasty addition to your dining experience.|Sides
+16|Soda|91.00|A refreshing drink to pair with your meal.|Beverages
+16|Smoothie|95.00|A delightful beverage to enhance your dining experience.|Beverages
+16|Ice Cream|25.00|A sweet treat to end your meal on a high note.|Desserts
+16|Tiramisu|78.00|Rich, creamy, and utterly indulgent.|Desserts
+17|Pizza|69.00|A delicious main course crafted with fresh ingredients.|Main Item
+17|Burger|51.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+17|Pasta|76.00|A classic recipe loved by generations.|Main Item
+17|Tacos|88.00|A delicious main course crafted with fresh ingredients.|Main Item
+17|French Fries|48.00|A perfect accompaniment to your meal.|Sides
+17|Garlic Bread|87.00|Crispy, golden, and full of flavor.|Sides
+17|Soda|54.00|Perfectly chilled and full of flavor.|Beverages
+17|Smoothie|84.00|A refreshing drink to pair with your meal.|Beverages
+17|Ice Cream|58.00|A sweet treat to end your meal on a high note.|Desserts
+17|Tiramisu|65.00|A sweet treat to end your meal on a high note.|Desserts
+18|Pizza|43.00|A classic recipe loved by generations.|Main Item
+18|Burger|75.00|A signature item known for its rich flavors and textures.|Main Item
+18|Pasta|69.00|A delicious main course crafted with fresh ingredients.|Main Item
+18|Tacos|37.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+18|French Fries|28.00|A perfect accompaniment to your meal.|Sides
+18|Garlic Bread|43.00|A perfect accompaniment to your meal.|Sides
+18|Soda|87.00|A delightful beverage to enhance your dining experience.|Beverages
+18|Smoothie|94.00|Cool, crisp, and thirst-quenching.|Beverages
+18|Ice Cream|37.00|Rich, creamy, and utterly indulgent.|Desserts
+18|Tiramisu|32.00|A sweet treat to end your meal on a high note.|Desserts
+19|Pizza|46.00|A classic recipe loved by generations.|Main Item
+19|Burger|96.00|A classic recipe loved by generations.|Main Item
+19|Pasta|80.00|A delicious main course crafted with fresh ingredients.|Main Item
+19|Tacos|75.00|A signature item known for its rich flavors and textures.|Main Item
+19|French Fries|96.00|A light and tasty addition to your dining experience.|Sides
+19|Garlic Bread|76.00|A light and tasty addition to your dining experience.|Sides
+19|Soda|73.00|A delightful beverage to enhance your dining experience.|Beverages
+19|Smoothie|75.00|A delightful beverage to enhance your dining experience.|Beverages
+19|Ice Cream|20.00|A sweet treat to end your meal on a high note.|Desserts
+19|Tiramisu|43.00|A sweet treat to end your meal on a high note.|Desserts
+20|Pizza|91.00|A delicious main course crafted with fresh ingredients.|Main Item
+20|Burger|72.00|A classic recipe loved by generations.|Main Item
+20|Pasta|46.00|A delicious main course crafted with fresh ingredients.|Main Item
+20|Tacos|100.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+20|French Fries|72.00|A light and tasty addition to your dining experience.|Sides
+20|Garlic Bread|72.00|A perfect accompaniment to your meal.|Sides
+20|Soda|50.00|Cool, crisp, and thirst-quenching.|Beverages
+20|Smoothie|23.00|A delightful beverage to enhance your dining experience.|Beverages
+20|Ice Cream|42.00|A dessert that satisfies every sweet tooth.|Desserts
+20|Tiramisu|42.00|Rich, creamy, and utterly indulgent.|Desserts
+21|Pizza|47.00|A classic recipe loved by generations.|Main Item
+21|Burger|41.00|A delicious main course crafted with fresh ingredients.|Main Item
+21|Pasta|38.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+21|Tacos|78.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+21|French Fries|42.00|A light and tasty addition to your dining experience.|Sides
+21|Garlic Bread|34.00|A side dish that complements any main course.|Sides
+21|Soda|95.00|Perfectly chilled and full of flavor.|Beverages
+21|Smoothie|56.00|A delightful beverage to enhance your dining experience.|Beverages
+21|Ice Cream|80.00|A sweet treat to end your meal on a high note.|Desserts
+21|Tiramisu|58.00|A dessert that satisfies every sweet tooth.|Desserts
+22|Pizza|58.00|A delicious main course crafted with fresh ingredients.|Main Item
+22|Burger|50.00|A signature item known for its rich flavors and textures.|Main Item
+22|Pasta|77.00|A hearty and satisfying dish, perfect for any meal.|Main Item
+22|Tacos|81.00|A signature item known for its rich flavors and textures.|Main Item
+22|French Fries|75.00|A perfect accompaniment to your meal.|Sides
+22|Garlic Bread|25.00|A side dish that complements any main course.|Sides
+22|Soda|72.00|Perfectly chilled and full of flavor.|Beverages
+22|Smoothie|84.00|A refreshing drink to pair with your meal.|Beverages
+22|Ice Cream|78.00|A dessert that satisfies every sweet tooth.|Desserts
+22|Tiramisu|90.00|A dessert that satisfies every sweet tooth.|Desserts
