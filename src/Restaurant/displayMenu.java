@@ -4,55 +4,61 @@ import Restaurant_menu.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 public class displayMenu {
     static Scanner input = new Scanner(System.in);
 
+    private static void displayMenu_attributes(menuItems item){
+        System.out.println("\nItem name: "+item.getName());
+        System.out.println("Description: "+item.getDescription());
+        System.out.println("Price: "+item.getPrice());
+    }
     public static void displayMenuOfRestaurant(int Rest_id) {
         ArrayList<menuItems> menu = fileHandle.readMenuItemsFromFile(Rest_id);
         System.out.println("\nMain Item");
         for (menuItems item : menu) {
-            if (item.getCategory().equals("Main Item")) {
-                System.out.println("\nItem name: "+item.getName());
-                System.out.println("Description: "+item.getDescription());
-                System.out.println("Price: "+item.getPrice());
+            if (item.getCategory().equals(">>> Main Item")) {
+                displayMenu_attributes(item);
             }
         }
         System.out.println("\nSides");
         for (menuItems item : menu) {
-            if (item.getCategory().equals("Sides")) {
-                System.out.println("\nItem name: "+item.getName());
-                System.out.println("Description: "+item.getDescription());
-                System.out.println("Price: "+item.getPrice());
+            if (item.getCategory().equals(">>> Sides")) {
+                displayMenu_attributes(item);
             }
         }
         System.out.println("\nDrinks");
         for (menuItems item : menu) {
-            if (item.getCategory().equals("Beverages")) {
-                System.out.println("\nItem name: "+item.getName());
-                System.out.println("Description: "+item.getDescription());
-                System.out.println("Price: "+item.getPrice());
+            if (item.getCategory().equals(">>> Beverages")) {
+                displayMenu_attributes(item);
             }
         }
     }
     public static int chooseRestaurant() {
-        System.out.println("\nChoose a restaurant: ");
-        String Rest_name = input.nextLine();
+        // Delegate to the parameterized method
         ArrayList<restaurant> restaurants = displayRestaurants.getRestaurants();
+        return chooseRestaurant(restaurants);
+    }
+
+    public static int chooseRestaurant(ArrayList<restaurant> restaurants) {
+        Scanner input = new Scanner(System.in); // Ensure Scanner is initialized
+        int restId = -1;
         boolean found = false;
-        int rest_id=-1;
-        for (restaurant restaurant : restaurants) {
-            if (restaurant.getName().equals(Rest_name)) {
-                found = true;
-                rest_id = restaurant.getId();
-                break;
+
+        while (!found) {
+            System.out.println("\nChoose a restaurant: ");
+            String restName = input.nextLine();
+
+            for (restaurant restaurant : restaurants) {
+                if (restaurant.getName().equalsIgnoreCase(restName)) { // Case-insensitive match
+                    found = true;
+                    restId = restaurant.getId();
+                    break;
+                }
+            }
+            if (!found) {
+                System.out.println("\nRestaurant not found. Please enter a valid name.");
             }
         }
-        if (found){
-            return rest_id;
-        }
-        else {
-            System.out.println("\nRestaurant not found");
-            return -1;}
+        return restId;
     }
 }
