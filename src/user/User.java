@@ -1,28 +1,33 @@
 package user;
 import fileHandling.fileHandle;
 import main.foodsys.foodSys;
+import payments.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import Order.*;
+
 public class User {
     static Scanner input = new Scanner(System.in);
 
-    String username;
-    String password;
-    String email;
-    String deliveryAddress;
-    static List<User> users = fileHandle.readUsersFromFile();
-    public static int counter = 0;
+    private String username;
+    private String password;
+    private String email;
+    private String deliveryAddress;
+    private static List<User> users = fileHandle.readUsersFromFile();
+    private ArrayList<userPayment> UserPayments = new ArrayList<>();
+    private cart Usercart;
 
     public User(String username,String email,String password,String deliveryAddress) {
         this.username = username;
         this.password = password;
         this.email = email;
         this.deliveryAddress = deliveryAddress;
-        counter++;
+        this.Usercart = new cart();
     }
 //Getters and Setters
     public String getUsername() {
@@ -44,12 +49,20 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
+    public static User findUserByUsername(String username) {
+        for (User user : users) {
+            if (user.getUsername().equals(username)) { // Check if the username matches
+                return user; // Return the matching user
+            }
+        }
+        return null; // Return null if no user is found
+    }
     public static boolean checkUsername(String username) {
         boolean check = false;
 
         for (User user : users) {
             if ((user.getUsername()).equals(username)) {
+                foodSys.loggedInUser = User.findUserByUsername(username);
                 check = true;
             }
         }
@@ -146,6 +159,7 @@ public class User {
         }
         // Add user to the system
         User.addUser(usernameInput, emailInput, passwordInput, deliveryAddressInput);
+        foodSys.loggedInUser =  User.findUserByUsername(usernameInput);
         System.out.println("User registered successfully!");
     }
     public static void LoginUser() {
@@ -164,6 +178,7 @@ public class User {
             }
 
             if (User.checkLogin(usernameInput, passwordInput)) {
+                foodSys.loggedInUser = User.findUserByUsername(usernameInput); 
                 System.out.println("Login successful. Welcome, " + usernameInput + "!");
                 isAttemptingLogin = false; // Exit loop on successful login
             } else {
@@ -180,6 +195,14 @@ public class User {
             }
         }
     }
+    public cart getCart() {
+        return Usercart;
+    }
+
+    public void setCart(cart cart) {
+        this.Usercart = cart;
+    }
+
 }
 
 

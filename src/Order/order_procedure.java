@@ -3,6 +3,8 @@ package Order;
 import Restaurant.displayMenu;
 import Restaurant_menu.menuItems;
 import fileHandling.fileHandle;
+import user.User;
+
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -15,7 +17,9 @@ public class order_procedure {
     private double Price;
     private int Quantity;
 
-    private static ArrayList<order_procedure> cart_items = new ArrayList<>();
+
+   // private static ArrayList<order_procedure> cart_items = new ArrayList<>();
+    private static ArrayList<order_procedure> ordered_items = new ArrayList<>();
 
     public order_procedure(String ItemName, String Description, double Price, int Quantity) {
         this.ItemName = ItemName;
@@ -23,7 +27,8 @@ public class order_procedure {
         this.Price = Price;
         this.Quantity = Quantity;
     }
-    public static int order_items()
+    public order_procedure() {}
+    public static void order_items(User loggedInUser)
     {
         // Choosing a restaurant and placing an order
         int rest_choice = displayMenu.chooseRestaurant();
@@ -33,7 +38,7 @@ public class order_procedure {
         while (!order_choice) {
             System.out.println("Enter the name of the item you would like to order:");
             String itemName = input.nextLine();
-            selectItem(rest_choice, itemName);
+            selectItem(rest_choice, itemName ,loggedInUser);
 
             System.out.println("\nWould you like to order another item?");
             System.out.println("1. Yes");
@@ -53,10 +58,9 @@ public class order_procedure {
                 }
             }
         }
-        return rest_choice;
     }
     // Static method to select an item and add it to the orderedItems list
-    public static void selectItem(int restId, String itemName) {
+    public static void selectItem(int restId, String itemName, User loggedInUser) {
         ArrayList<menuItems> allMenuItems = fileHandle.readMenuItemsFromFile(restId);
         boolean found = false;
 
@@ -65,7 +69,7 @@ public class order_procedure {
                 found = true;
                 int quantity = 0;
                 boolean validInput = false;
-                // quantity
+
                 while (!validInput) {
                     try {
                         System.out.println("Enter the quantity you would like to order: ");
@@ -81,13 +85,13 @@ public class order_procedure {
                         input.nextLine(); // Clear invalid input from the buffer
                     }
                 }
-                // Add the item to the cart
-                cart_items.add(new order_procedure(
+                // Add the item to the user's cart
+                loggedInUser.getCart().addItem(new cart(
                         menuItem.getName(),
                         menuItem.getDescription(),
                         menuItem.getPrice(),
                         quantity));
-                System.out.println("\n"+quantity + " x " + menuItem.getName() + " added to your cart.");
+                System.out.println("\n" + quantity + " x " + menuItem.getName() + " added to your cart.");
                 break;
             }
         }
@@ -95,23 +99,9 @@ public class order_procedure {
             System.out.println("Item not found. Please check the menu and try again.");
         }
     }
-    // Method to display all ordered items
-    public static void displayCartItems() {
+
+    public static void addToOrder(User loggedInUser) {
         System.out.println("\nYour Order:");
-        for (order_procedure item : cart_items) {
-            System.out.println("Item: " + item.getItemName());
-            System.out.println("Description: " + item.getDescription());
-            System.out.println("Price: $" + item.getPrice());
-            System.out.println("Quantity: "+item.getQuantity());
-            System.out.println("---------------------------");
-        }
-    }
-    public static void displayCartMenu() {
-        if (order_procedure.getOrderedItems().isEmpty()) {
-            System.out.println("Cart is empty!");
-        } else {
-            order_procedure.displayCartItems();
-        }
     }
     // Getters for the attributes
     public String getItemName() {
@@ -128,7 +118,8 @@ public class order_procedure {
     public int getQuantity() {
         return Quantity;
     }
-    public static ArrayList<order_procedure> getOrderedItems() {
+
+    /*public static ArrayList<order_procedure> getOrderedItems() {
         return cart_items;
-    }
+    }*/
 }

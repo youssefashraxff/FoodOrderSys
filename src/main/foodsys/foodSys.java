@@ -7,6 +7,8 @@ import Restaurant.*;
 
 public class foodSys
 {
+    public static User loggedInUser = null;
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         boolean isRunning = true;
@@ -46,19 +48,21 @@ public class foodSys
         boolean inMenu = true;
         while (inMenu) {
             //System.out.println("\nWhat would you like to do next?");
-            System.out.println("\n1. Choose a restaurant by name");
+            System.out.println("\n1. Choose a restaurant");
             System.out.println("2. Filter restaurants");
             System.out.println("3. Go to Cart");
-            System.out.println("4. Exit");
-            System.out.print("Enter your choice: ");
+            System.out.println("4. Add cart to order");
+            System.out.println("5. Exit");
+            System.out.print("\nEnter your choice: ");
 
             int choiceNext = getValidInt(input);
 
             switch (choiceNext) {
-                case 1 -> order_procedure.order_items();
+                case 1 -> order_procedure.order_items(loggedInUser);
                 case 2 -> Search_And_Filter.filterRestaurantsMenu(input);
-                case 3 -> order_procedure.displayCartMenu();
-                case 4 -> {
+                case 3 -> cart.displayCartMenu(loggedInUser);
+                case 4 -> order_procedure.addToOrder(loggedInUser);
+                case 5 -> {
                     System.out.println("Goodbye!");
                     inMenu = false;
                 }

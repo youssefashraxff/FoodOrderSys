@@ -1,5 +1,7 @@
 package Order;
 import main.foodsys.foodSys;
+import user.User;
+
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -39,7 +41,7 @@ public class Search_And_Filter {
             String itemName = input.nextLine();
 
             // Perform the item selection logic
-            order_procedure.selectItem(restChoice, itemName);
+            order_procedure.selectItem(restChoice, itemName,foodSys.loggedInUser);
 
             // Ask the user if they want to order another item or finish
             System.out.println("Would you like to order another item?");
