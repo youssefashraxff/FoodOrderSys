@@ -35,7 +35,6 @@ public class fileHandle {
             System.out.println("Error loading users: " + e.getMessage());
         }
         return users;
-
     }
     //Method for writing user Info
     public static void writeUsersToFile(List<User> users)

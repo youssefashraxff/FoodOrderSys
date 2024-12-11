@@ -20,14 +20,18 @@ public class User {
     private String deliveryAddress;
     private static List<User> users = fileHandle.readUsersFromFile();
     private ArrayList<userPayment> UserPayments = new ArrayList<>();
-    private cart Usercart;
+    public cart Usercart = null;
 
     public User(String username,String email,String password,String deliveryAddress) {
         this.username = username;
         this.password = password;
         this.email = email;
         this.deliveryAddress = deliveryAddress;
-        this.Usercart = new cart();
+        Usercart = new cart();
+    }
+    public User(){
+        User tempUser = LoginUser();
+        new User(tempUser.getUsername(),tempUser.getEmail(),tempUser.getPassword(),tempUser.getDeliveryAddress());
     }
 //Getters and Setters
     public String getUsername() {
@@ -162,7 +166,8 @@ public class User {
         foodSys.loggedInUser =  User.findUserByUsername(usernameInput);
         System.out.println("User registered successfully!");
     }
-    public static void LoginUser() {
+    public static User LoginUser() {
+        User tempUser=null;
         boolean isAttemptingLogin = true;
 
         while (isAttemptingLogin) {
@@ -177,10 +182,10 @@ public class User {
                 continue;
             }
 
-            if (User.checkLogin(usernameInput, passwordInput)) {
-                foodSys.loggedInUser = User.findUserByUsername(usernameInput); 
+            if (checkLogin(usernameInput, passwordInput)) {
                 System.out.println("Login successful. Welcome, " + usernameInput + "!");
-                isAttemptingLogin = false; // Exit loop on successful login
+                tempUser = User.findUserByUsername(usernameInput);
+                return tempUser;
             } else {
                 System.out.println("Login failed. Incorrect username or password.");
                 System.out.println("Would you like to try again?");
@@ -194,15 +199,18 @@ public class User {
                 }
             }
         }
+        return tempUser;
     }
     public cart getCart() {
+        if (Usercart == null) {
+            Usercart = new cart(); // Lazily initialize if null
+        }
         return Usercart;
     }
 
     public void setCart(cart cart) {
         this.Usercart = cart;
     }
-
 }
 
 

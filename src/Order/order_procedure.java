@@ -17,10 +17,6 @@ public class order_procedure {
     private double Price;
     private int Quantity;
 
-
-   // private static ArrayList<order_procedure> cart_items = new ArrayList<>();
-    private static ArrayList<order_procedure> ordered_items = new ArrayList<>();
-
     public order_procedure(String ItemName, String Description, double Price, int Quantity) {
         this.ItemName = ItemName;
         this.Description = Description;
@@ -45,12 +41,11 @@ public class order_procedure {
             System.out.println("2. Finish order");
 
             while (true) {
-                int orderchoices = input.nextInt();
+                int order_Choices = input.nextInt();
                 input.nextLine(); // Clear buffer
-                if (orderchoices == 1) {
-                    order_choice = false;
+                if (order_Choices == 1) {
                     break;
-                } else if (orderchoices == 2) {
+                } else if (order_Choices == 2) {
                     order_choice = true;
                     break;
                 } else {
@@ -61,6 +56,11 @@ public class order_procedure {
     }
     // Static method to select an item and add it to the orderedItems list
     public static void selectItem(int restId, String itemName, User loggedInUser) {
+
+        if (loggedInUser.getCart() == null) {
+            loggedInUser.setCart(new cart());
+        }
+
         ArrayList<menuItems> allMenuItems = fileHandle.readMenuItemsFromFile(restId);
         boolean found = false;
 
@@ -100,9 +100,6 @@ public class order_procedure {
         }
     }
 
-    public static void addToOrder(User loggedInUser) {
-        System.out.println("\nYour Order:");
-    }
     // Getters for the attributes
     public String getItemName() {
         return ItemName;
@@ -115,11 +112,8 @@ public class order_procedure {
     public double getPrice() {
         return Price;
     }
+
     public int getQuantity() {
         return Quantity;
     }
-
-    /*public static ArrayList<order_procedure> getOrderedItems() {
-        return cart_items;
-    }*/
 }

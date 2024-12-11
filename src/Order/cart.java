@@ -6,21 +6,21 @@ import java.util.ArrayList;
 
 public class cart extends order_procedure {
 
-    private ArrayList<order_procedure> cart_items=new ArrayList<>();
+    public  ArrayList<order_procedure> cart_items=new ArrayList<>();
     private double total_price;
 
     public cart(String ItemName, String Description, double Price, int Quantity) {
         super(ItemName, Description, Price, Quantity);
         cart_items.add(new order_procedure(ItemName, Description, Price, Quantity));
-        total_price=calculateTotalPrice(cart_items);
+        //total_price=calculateTotalPrice(cart_items);
     }
     public cart(){
         super();
     }
     // Method to display all ordered items
-    public static void displayCartItems(User loggedInUser) {
+    public  void displayCartItems() {
         System.out.println("\nYour Order:");
-        for (order_procedure item : loggedInUser.getCart().getItems()) {
+        for (order_procedure item : cart_items) {
             System.out.println("Item: " + item.getItemName());
             System.out.println("Description: " + item.getDescription());
             System.out.println("Price: $" + item.getPrice());
@@ -28,18 +28,18 @@ public class cart extends order_procedure {
             System.out.println("---------------------------");
         }
 
-        System.out.println("Total amount: $" + loggedInUser.getCart().getTotalPrice());
+        System.out.println("Total amount: $" + calculateTotalPrice());
     }
-    public static void displayCartMenu(User loggedInUser) {
-        if (loggedInUser.getCart().cart_items.isEmpty()) {
+    public void displayCartMenu(User loggedInUser) {
+        if (loggedInUser.Usercart.cart_items.isEmpty()) {
             System.out.println("Cart is empty!");
         } else {
-            cart.displayCartItems(loggedInUser);
+            displayCartItems();
         }
     }
     public void addItem(order_procedure item) {
         cart_items.add(item);
-        calculateTotalPrice(cart_items);
+        //calculateTotalPrice(cart_items);
     }
 
     /*public void removeItem(order_procedure item) {
@@ -47,7 +47,7 @@ public class cart extends order_procedure {
         calculateTotalPrice();
     }*/
 
-    private double calculateTotalPrice(ArrayList<order_procedure> cart) {
+    private double calculateTotalPrice() {
         total_price = 0.0; // Reset total price
         for (order_procedure item : cart_items) {
             total_price += item.getPrice() * item.getQuantity();
@@ -59,7 +59,7 @@ public class cart extends order_procedure {
         return total_price;
     }
 
-    public ArrayList<order_procedure> getItems() {
+    public  ArrayList<order_procedure> getItems() {
         return cart_items;
     }
 }
