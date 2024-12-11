@@ -28,7 +28,7 @@ public class foodSys
                     postLoginMenu(input);
                 }
                 case 2 -> {
-                    User.LoginUser();
+                    loggedInUser = new User();
                     postLoginMenu(input);
                 }
                 case 3 -> {
@@ -60,8 +60,8 @@ public class foodSys
             switch (choiceNext) {
                 case 1 -> order_procedure.order_items(loggedInUser);
                 case 2 -> Search_And_Filter.filterRestaurantsMenu(input);
-                case 3 -> cart.displayCartMenu(loggedInUser);
-                case 4 -> order_procedure.addToOrder(loggedInUser);
+                case 3 -> loggedInUser.getCart().displayCartMenu(loggedInUser);
+
                 case 5 -> {
                     System.out.println("Goodbye!");
                     inMenu = false;
