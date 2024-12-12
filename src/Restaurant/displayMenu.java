@@ -7,6 +7,8 @@ import java.util.Scanner;
 public class displayMenu {
     static Scanner input = new Scanner(System.in);
 
+    private static String ChosenRestaurantName;
+
     private static void displayMenu_attributes(menuItems item){
         System.out.println("\nItem name: "+item.getName());
         System.out.println("Description: "+item.getDescription());
@@ -47,7 +49,7 @@ public class displayMenu {
         while (!found) {
             System.out.println("\nChoose a restaurant: ");
             String restName = input.nextLine();
-
+            ChosenRestaurantName = restName;
             for (restaurant restaurant : restaurants) {
                 if (restaurant.getName().equalsIgnoreCase(restName)) { // Case-insensitive match
                     found = true;
@@ -60,5 +62,8 @@ public class displayMenu {
             }
         }
         return restId;
+    }
+    public static String saveRestaurantName() {
+        return ChosenRestaurantName;
     }
 }

@@ -8,12 +8,14 @@ import java.util.Scanner;
 public class cart extends order_procedure {
     Scanner input = new Scanner(System.in);
 
-    public  ArrayList<order_procedure> cart_items=new ArrayList<>();
+    private String RestaurantName;
+    private ArrayList<order_procedure> cart_items=new ArrayList<>();
     private double total_price;
 
-    public cart(String ItemName, String Description, double Price, int Quantity) {
+    public cart(String ItemName, String Description, double Price, int Quantity,String RestaurantName) {
         super(ItemName, Description, Price, Quantity);
         cart_items.add(new order_procedure(ItemName, Description, Price, Quantity));
+        this.RestaurantName=RestaurantName;
         //total_price=calculateTotalPrice(cart_items);
     }
     public cart(){
@@ -29,10 +31,11 @@ public class cart extends order_procedure {
         System.out.println("---------------------------");
         System.out.println("Total amount: $" + calculateTotalPrice());
     }
-    public void displayCartMenu() {
+    public boolean displayCartMenu(User loggedInUser) {
         boolean check1 = true;
         boolean check2 = true;
         boolean edits_On_Cart = false;
+        boolean addToOrderCheck = false ;
         int userChoice2;
         int userChoice3;
         String removedItem;
@@ -70,12 +73,17 @@ public class cart extends order_procedure {
                             }
                         }
                     }
+                    addToOrderCheck = false;
                 }
                 else if(userChoice3 == 2){
+                    check1=false;
+                    check2=false;
                     if (edits_On_Cart) {
                         displayCartItems();
+                        addToOrderCheck = true;
                     }
                     else {
+                        addToOrderCheck = true;
 
                     }
                 }
@@ -87,6 +95,15 @@ public class cart extends order_procedure {
                 }
             }
         }
+        return addToOrderCheck;
+    }
+    public void displayOrder(){
+        for (order_procedure item : cart_items) {
+            System.out.println(item.getQuantity()+" x "+item.getItemName());
+            System.out.println("$"+item.getPrice()+" each");
+        }
+        System.out.println("---------------------------");
+        System.out.println("Total amount: $" + calculateTotalPrice());
     }
     public void addItem(order_procedure item) {
         cart_items.add(item);
@@ -124,6 +141,10 @@ public class cart extends order_procedure {
 
     public double getTotalPrice() {
         return total_price;
+    }
+
+    public String getRestaurantName() {
+        return RestaurantName;
     }
 
     public  ArrayList<order_procedure> getItems() {

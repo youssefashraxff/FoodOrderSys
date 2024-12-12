@@ -11,8 +11,6 @@ import java.util.regex.Pattern;
 
 import Order.*;
 
-import javax.smartcardio.Card;
-
 public class User {
     static Scanner input = new Scanner(System.in);
 
@@ -23,7 +21,9 @@ public class User {
     private String deliveryAddress;
     private static List<User> users = fileHandle.readUsersFromFile();
     private ArrayList<CardPayment> UserCardPayments = new ArrayList<>();
-    public cart Usercart = null;
+    private CardPayment OrderCardPayment;
+    private cart Usercart = null;
+    private order UserOrder = null;
 
     public User(int UserId,String username,String email,String password,String deliveryAddress) {
         this.UserID = UserId;
@@ -32,6 +32,8 @@ public class User {
         this.email = email;
         this.deliveryAddress = deliveryAddress;
         Usercart = new cart();
+        UserOrder = new order();
+        OrderCardPayment = new CardPayment();
     }
     public User(){
         User tempUser = LoginUser();
@@ -209,10 +211,41 @@ public class User {
         }
         return tempUser;
     }
-    public void addPaymentMethod(int userID){
+    public void addPaymentMethod(){
         CardPayment tempCard = new CardPayment();
-        UserCardPayments.add(tempCard.add_CreditCard_info(userID));
+        UserCardPayments.add(tempCard.add_CreditCard_info(this.UserID));
         fileHandle.writePaymentMethodToFile(UserCardPayments,this.getUserID());
+    }
+    public boolean displayPaymentMethods(){
+        return CardPayment.displayCardInfo(this.UserID);
+    }
+    public void addCartToOrder(){
+        order tempOrder = new order();
+        String DeliveryTime;
+        int inputPayment;
+        while (true){
+            System.out.println("\nPayment Method:\n1. Cash\n2. Credit/Debit Card");
+            inputPayment = input.nextInt();
+            if(inputPayment == 1){
+                break;
+            }
+            else if(inputPayment == 2){
+                if(displayPaymentMethods()){
+                    addPaymentMethod();
+                }
+                else{
+                    UserCardPayments = fileHandle.readPaymentMethodFromFile(UserID);
+                    OrderCardPayment=CardPayment.chooseCardForOrder(UserCardPayments);
+                }
+                break;
+            }
+            else{
+                System.out.println("Invalid input. Please try again.");
+            }
+        }
+        DeliveryTime=order.promptDeliveryTime();
+        UserOrder = new order(this.UserID,this.deliveryAddress,this.OrderCardPayment,this.Usercart,DeliveryTime);
+        UserOrder.displayOrder();
     }
     public cart getCart() {
         if (Usercart == null) {

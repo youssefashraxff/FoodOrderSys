@@ -36,6 +36,8 @@ public class order_procedure {
             String itemName = input.nextLine();
             selectItem(rest_choice, itemName ,loggedInUser);
 
+            String ChosenRestaurantName = displayMenu.saveRestaurantName();
+
             System.out.println("\nWould you like to order another item?");
             System.out.println("1. Yes");
             System.out.println("2. Finish order");
@@ -90,7 +92,7 @@ public class order_procedure {
                         menuItem.getName(),
                         menuItem.getDescription(),
                         menuItem.getPrice(),
-                        quantity));
+                        quantity,displayMenu.saveRestaurantName()));
                 System.out.println("\n" + quantity + " x " + menuItem.getName() + " added to your cart.");
                 break;
             }

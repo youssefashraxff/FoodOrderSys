@@ -61,9 +61,13 @@ public class foodSys
             switch (choiceNext) {
                 case 1 -> order_procedure.order_items(loggedInUser);
                 case 2 -> search_filter.filterRestaurantsMenu(input);
-                case 3 -> loggedInUser.getCart().displayCartMenu();
-                case 4 -> {if(CardPayment.displayCardInfo(loggedInUser)){
-                    loggedInUser.addPaymentMethod(loggedInUser.getUserID());
+                case 3 -> {
+                    if(loggedInUser.getCart().displayCartMenu(loggedInUser)){
+                        loggedInUser.addCartToOrder();
+                    }
+                }
+                case 4 -> {if(loggedInUser.displayPaymentMethods()){
+                    loggedInUser.addPaymentMethod();
                 };
                 }
                 case 5 -> {

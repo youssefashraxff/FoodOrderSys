@@ -1,2 +1,3 @@
 1|Debit Card|5318059960124727|04/28|429|youssef ashraf
 1|Telda|5484460079592093|01/28|711|youssef ashraf
+2|Telda|5484460079597654|01/29|222|ali nasr
