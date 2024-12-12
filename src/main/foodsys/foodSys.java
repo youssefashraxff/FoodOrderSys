@@ -4,6 +4,7 @@ import java.util.Scanner;
 import Order.*;
 import user.*;
 import Restaurant.*;
+import payments.*;
 
 public class foodSys
 {
@@ -28,7 +29,7 @@ public class foodSys
                     postLoginMenu(input);
                 }
                 case 2 -> {
-                    loggedInUser = new User();
+                    loggedInUser=User.LoginUser();
                     postLoginMenu(input);
                 }
                 case 3 -> {
@@ -50,8 +51,8 @@ public class foodSys
             //System.out.println("\nWhat would you like to do next?");
             System.out.println("\n1. Choose a restaurant");
             System.out.println("2. Filter restaurants");
-            System.out.println("3. Go to Cart");
-            System.out.println("4. Add cart to order");
+            System.out.println("3. View Cart");
+            System.out.println("4. View payments");
             System.out.println("5. Exit");
             System.out.print("\nEnter your choice: ");
 
@@ -59,9 +60,12 @@ public class foodSys
 
             switch (choiceNext) {
                 case 1 -> order_procedure.order_items(loggedInUser);
-                case 2 -> Search_And_Filter.filterRestaurantsMenu(input);
-                case 3 -> loggedInUser.getCart().displayCartMenu(loggedInUser);
-
+                case 2 -> search_filter.filterRestaurantsMenu(input);
+                case 3 -> loggedInUser.getCart().displayCartMenu();
+                case 4 -> {if(CardPayment.displayCardInfo(loggedInUser)){
+                    loggedInUser.addPaymentMethod(loggedInUser.getUserID());
+                };
+                }
                 case 5 -> {
                     System.out.println("Goodbye!");
                     inMenu = false;

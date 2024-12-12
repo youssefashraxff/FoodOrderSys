@@ -32,7 +32,7 @@ public class order_procedure {
 
         boolean order_choice = false;
         while (!order_choice) {
-            System.out.println("Enter the name of the item you would like to order:");
+            System.out.println("\nEnter the name of the item you would like to order:");
             String itemName = input.nextLine();
             selectItem(rest_choice, itemName ,loggedInUser);
 
@@ -115,5 +115,8 @@ public class order_procedure {
 
     public int getQuantity() {
         return Quantity;
+    }
+    public void setQuantity(int Quantity) {
+        this.Quantity = Quantity;
     }
 }

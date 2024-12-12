@@ -11,18 +11,22 @@ import java.util.regex.Pattern;
 
 import Order.*;
 
+import javax.smartcardio.Card;
+
 public class User {
     static Scanner input = new Scanner(System.in);
 
+    private int UserID;
     private String username;
     private String password;
     private String email;
     private String deliveryAddress;
     private static List<User> users = fileHandle.readUsersFromFile();
-    private ArrayList<userPayment> UserPayments = new ArrayList<>();
+    private ArrayList<CardPayment> UserCardPayments = new ArrayList<>();
     public cart Usercart = null;
 
-    public User(String username,String email,String password,String deliveryAddress) {
+    public User(int UserId,String username,String email,String password,String deliveryAddress) {
+        this.UserID = UserId;
         this.username = username;
         this.password = password;
         this.email = email;
@@ -31,9 +35,12 @@ public class User {
     }
     public User(){
         User tempUser = LoginUser();
-        new User(tempUser.getUsername(),tempUser.getEmail(),tempUser.getPassword(),tempUser.getDeliveryAddress());
+        new User(tempUser.getUserID(), tempUser.getUsername(),tempUser.getEmail(),tempUser.getPassword(),tempUser.getDeliveryAddress());
     }
-//Getters and Setters
+    //Getters and Setters
+    public int getUserID() {
+        return UserID;
+    }
     public String getUsername() {
         return username;
     }
@@ -53,6 +60,7 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
     public static User findUserByUsername(String username) {
         for (User user : users) {
             if (user.getUsername().equals(username)) { // Check if the username matches
@@ -102,7 +110,7 @@ public class User {
     }
     public static void addUser(String username, String password, String email, String deliveryAddress)
     {
-        users.add(new User(username, password, email, deliveryAddress));
+        users.add(new User(users.size()+1,username, password, email, deliveryAddress));
         fileHandle.writeUsersToFile(users);
     }
     public static void RegisterUser() {
@@ -185,7 +193,7 @@ public class User {
             if (checkLogin(usernameInput, passwordInput)) {
                 System.out.println("Login successful. Welcome, " + usernameInput + "!");
                 tempUser = User.findUserByUsername(usernameInput);
-                return tempUser;
+                return new User(tempUser.getUserID(),tempUser.getUsername(),tempUser.getEmail(),tempUser.getPassword(),tempUser.getDeliveryAddress());
             } else {
                 System.out.println("Login failed. Incorrect username or password.");
                 System.out.println("Would you like to try again?");
@@ -201,15 +209,22 @@ public class User {
         }
         return tempUser;
     }
+    public void addPaymentMethod(int userID){
+        CardPayment tempCard = new CardPayment();
+        UserCardPayments.add(tempCard.add_CreditCard_info(userID));
+        fileHandle.writePaymentMethodToFile(UserCardPayments,this.getUserID());
+    }
     public cart getCart() {
         if (Usercart == null) {
-            Usercart = new cart(); // Lazily initialize if null
+            Usercart = new cart();
         }
         return Usercart;
     }
-
     public void setCart(cart cart) {
         this.Usercart = cart;
+    }
+    public ArrayList<CardPayment> getUserPayments() {
+        return UserCardPayments;
     }
 }
 

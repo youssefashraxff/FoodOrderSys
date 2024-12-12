@@ -3,6 +3,7 @@ package fileHandling;
 import user.User;
 import Restaurant.restaurant;
 import Restaurant_menu.*;
+import payments.CardPayment;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,9 +13,9 @@ public class fileHandle {
     private static final String UserFilePath = "./files/users.txt";
     private static final String RestaurantFilePath = "./files/restaurants.txt";
     private static final String MenuFilePath = "./files/menu.txt";
+    private static final String PaymentFilePath = "./files/payment_methods.txt";
     //Method for reading user info
-    public static List<User> readUsersFromFile()
-    {
+    public static List<User> readUsersFromFile() {
         List<User> users = new ArrayList<>();
         try
         {
@@ -23,8 +24,8 @@ public class fileHandle {
             String line = br.readLine();
             while (line != null)
             {
-                String user_info[] = line.split(",");
-                users.add(new User(user_info[0],user_info[1],user_info[2],user_info[3]));
+                String[] user_info = line.split(",");
+                users.add(new User(Integer.parseInt(user_info[0]),user_info[1],user_info[2],user_info[3],user_info[4]));
                 line = br.readLine();
             }
             br.close();
@@ -37,15 +38,21 @@ public class fileHandle {
         return users;
     }
     //Method for writing user Info
-    public static void writeUsersToFile(List<User> users)
-    {
+    public static void writeUsersToFile(List<User> users) {
+        int lines=0;
         try
         {
-            FileWriter userFile = new FileWriter(UserFilePath);
+            FileWriter userFile = new FileWriter(UserFilePath,true);
             BufferedWriter bw = new BufferedWriter(userFile);
+
+            BufferedReader br = new BufferedReader(new FileReader(UserFilePath));
+            while(br.readLine()!=null){
+                lines ++;
+            }
+            String nlines = String.valueOf(lines);
             for(User user : users)
             {
-                bw.write(user.getUsername()+","+user.getEmail()+","+user.getPassword()+","+user.getDeliveryAddress());
+                bw.write(nlines+","+user.getUsername()+","+user.getEmail()+","+user.getPassword()+","+user.getDeliveryAddress());
                 bw.newLine();
             }
             bw.close();
@@ -57,8 +64,7 @@ public class fileHandle {
         }
     }
     //Method for reading restaurant info
-    public static ArrayList<restaurant> readRestaurantFromFile()
-    {
+    public static ArrayList<restaurant> readRestaurantFromFile() {
         ArrayList<restaurant> restaurants = new ArrayList<>();
         ArrayList<menuItems> items;
         try
@@ -68,7 +74,7 @@ public class fileHandle {
             String line = br.readLine();
             while (line != null)
             {
-                String Rest_info[] = line.split("\\|");
+                String[] Rest_info = line.split("\\|");
                 int Id = Integer.parseInt(Rest_info[0]);
                 String Name = Rest_info[1];
                 String Address = Rest_info[2];
@@ -89,8 +95,7 @@ public class fileHandle {
         return restaurants;
     }
     //Method for reading menu item
-    public static ArrayList<menuItems> readMenuItemsFromFile(int Rest_Id)
-    {
+    public static ArrayList<menuItems> readMenuItemsFromFile(int Rest_Id) {
         ArrayList<menuItems> items = new ArrayList<>();
         try {
             FileReader menuFile = new FileReader(MenuFilePath);
@@ -118,5 +123,50 @@ public class fileHandle {
             System.out.println("Error loading menu items: " + e.getMessage());
         }
         return items;
+    }
+    //Method for reading payment info
+    public static ArrayList<CardPayment> readPaymentMethodFromFile(int UserId) {
+        ArrayList<CardPayment> user_payment_methods = new ArrayList<>();
+        try{
+            FileReader fileReader = new FileReader(PaymentFilePath);
+            BufferedReader br = new BufferedReader(fileReader);
+            String line = br.readLine();
+            while(line != null){
+                String[] payment_info = line.split("\\|");
+                int Id = Integer.parseInt(payment_info[0]);
+
+                if (UserId == Id){
+                    String cardType = payment_info[1];
+                    String cardNumber = payment_info[2];
+                    String expiryDate = payment_info[3];
+                    String cvv = payment_info[4];
+                    String cardHolderName = payment_info[5];
+
+                    user_payment_methods.add(new CardPayment(Id,cardType,cardNumber,expiryDate,cvv,cardHolderName));
+                }
+                line = br.readLine();
+            }
+            br.close();
+            fileReader.close();
+        }catch(IOException e){
+            System.out.println("Error loading payment methods: " + e.getMessage());
+        }
+        return user_payment_methods;
+    }
+    //Method for writing payment info
+    public static void writePaymentMethodToFile(ArrayList<CardPayment> payment_methods, int userId) {
+        try {
+            FileWriter fileWriter = new FileWriter(PaymentFilePath, true);
+            BufferedWriter bw = new BufferedWriter(fileWriter);
+
+            for (CardPayment payment : payment_methods) {
+                bw.write(userId + "|" + payment.getCardType() + "|" + payment.getCardNumber() + "|" +
+                        payment.getExpiryDate() + "|" + payment.getCvv() + "|" + payment.getCardHolderName());
+                bw.newLine();
+            }
+            bw.close();
+        } catch (IOException e) {
+            System.out.println("Error writing payment methods: " + e.getMessage());
+        }
     }
 }
