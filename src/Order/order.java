@@ -31,6 +31,16 @@ public class order {
         System.out.println("Order Payment: " + OrderPayment);
         System.out.println("Order : ");
         orderCart.displayOrder();
+
+
+        OrderStatus orderStatus = new OrderStatus("Order Placed");
+        Thread orderTrackingThread = new Thread(orderStatus);
+        System.out.println("Order tracking started. You will see updates shortly...");
+        orderTrackingThread.run();
+        Review.collectReview();
+        Review.displayReviews();
+
+
     }
 
     public order(){}
@@ -117,3 +127,4 @@ public class order {
         this.transactionID = transactionID;
     }
 }
+
