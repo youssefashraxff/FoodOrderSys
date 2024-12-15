@@ -32,6 +32,7 @@ public class Admin extends User {
     }
     public void changePrice() {
         int Restaurant_ID = selectRestaurantAndDisplayMenu();
+        System.out.println("hshshs");
         //Implementation
         fileHandle.writeMenuItemsToFile(items);
     }
