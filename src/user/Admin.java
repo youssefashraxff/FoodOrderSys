@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Admin extends User {
 
-    private final ArrayList<menuItems> items = new ArrayList<>();
+    private ArrayList<menuItems> items = new ArrayList<>();
     private final ArrayList<restaurant> restaurants = fileHandle.readRestaurantFromFile();
 
     public Admin(String username, String password) {
@@ -16,6 +16,7 @@ public class Admin extends User {
     private int selectRestaurantAndDisplayMenu() {
         int restaurantID = displayMenu.chooseRestaurant(restaurants);
         displayMenu.displayMenuOfRestaurant(restaurantID);
+        items = fileHandle.readMenuItemsFromFile(restaurantID);
         return restaurantID;
     }
 
