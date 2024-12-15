@@ -40,20 +40,14 @@ public class fileHandle {
     }
     //Method for writing user Info
     public static void writeUsersToFile(List<Customer> customers) {
-        int lines=0;
         try
         {
             FileWriter userFile = new FileWriter(UserFilePath,true);
             BufferedWriter bw = new BufferedWriter(userFile);
 
-            BufferedReader br = new BufferedReader(new FileReader(UserFilePath));
-            while(br.readLine()!=null){
-                lines ++;
-            }
-            String nlines = String.valueOf(lines);
             for(Customer customer : customers)
             {
-                bw.write(nlines+","+ customer.getUsername()+","+ customer.getEmail()+","+ customer.getPassword()+","+ customer.getDeliveryAddress());
+                bw.write(customer.getUserID()+","+ customer.getUsername()+","+ customer.getEmail()+","+ customer.getPassword()+","+ customer.getDeliveryAddress());
                 bw.newLine();
             }
             bw.close();
@@ -75,7 +69,7 @@ public class fileHandle {
             while (line != null)
             {
                 String[] admin_info = line.split(",");
-                admins.add(new Admin(admin_info[0],admin_info[1],admin_info[2]));
+                admins.add(new Admin(admin_info[0],admin_info[1]));
                 line = br.readLine();
             }
             br.close();
@@ -147,6 +141,33 @@ public class fileHandle {
             System.out.println("Error loading menu items: " + e.getMessage());
         }
         return items;
+    }
+    //Method for writing menu item
+    public static void writeMenuItemsToFile(ArrayList<menuItems> items) {
+        try
+        {
+            FileWriter userFile = new FileWriter(UserFilePath,true);
+            BufferedWriter bw = new BufferedWriter(userFile);
+
+            for (menuItems item : items) {
+                String line = String.join(",",
+                        String.valueOf(item.getRest_Id()), // Convert int or double to String if needed
+                        item.getName(),
+                        String.valueOf(item.getPrice()),
+                        item.getDescription(),
+                        item.getCategory()
+                );
+
+                bw.write(line);
+                bw.newLine();
+            }
+            bw.close();
+            userFile.close();
+        }
+        catch(IOException e)
+        {
+            System.out.println("Error writing customers: " + e.getMessage());
+        }
     }
     //Method for reading payment info
     public static ArrayList<CardPayment> readPaymentMethodFromFile(String UserId) {

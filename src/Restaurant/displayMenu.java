@@ -50,7 +50,6 @@ public class displayMenu {
             System.out.println("\nChoose a restaurant: ");
             String restName = input.nextLine();
             ChosenRestaurantName = restName;
-            System.out.println("\nRestaurant Name: "+getChosenRestaurantName());
             for (restaurant restaurant : restaurants) {
                 if (restaurant.getName().equalsIgnoreCase(restName)) { // Case-insensitive match
                     found = true;

@@ -22,7 +22,6 @@ public class User {
          this.username = username;
          this.password = password;
      }
-     public User(){}
 
     //Login and register process
     public static Customer findUserByUsername(String username) {
@@ -150,10 +149,10 @@ public class User {
             }
         }
         // Add user to the system
-        Customer.addUser(usernameInput, emailInput, passwordInput, deliveryAddressInput);
-        foodSys.loggedInCustomer =  Customer.findUserByUsername(usernameInput);
+        User.addUser(usernameInput, emailInput, passwordInput, deliveryAddressInput);
         System.out.println("Customer registered successfully!");
     }
+
     public static User LoginUser() {
         User tempUser;
         boolean isAttemptingLogin = true;
@@ -177,7 +176,7 @@ public class User {
                     tempUser = findAdminByUsername(usernameInput);
                     Admin tempAdmin = (Admin)tempUser;
                     if(tempUser != null) {
-                        return new Admin(((Admin) tempUser).getAdminID(), usernameInput, passwordInput);
+                        return new Admin(tempAdmin.getUsername(),tempAdmin.getPassword());
                     }
                 }
                 else {
@@ -213,7 +212,7 @@ public class User {
         return null; // Return null if the user exits the login process
     }
     public static boolean loginFailed(){
-         boolean check = true;
+         boolean check;
 
         System.out.println("Login failed. Incorrect username or password.");
         while (true) {
@@ -222,12 +221,15 @@ public class User {
             System.out.println("2. Exit");
 
             int choice = foodSys.getValidInt(input);
-
+            if(choice == 1) {
+                check = true;
+                break;
+            }
             if (choice == 2) {
                 System.out.println("Exiting login. Goodbye!");
                 check = false;
                 break;
-            } else if (choice != 1) {
+            } else {
                 System.out.println("Invalid choice. Please select 1 or 2.");
             }
         }
