@@ -1,8 +1,7 @@
 package Order;
 import payments.*;
-import user.User;
+import user.Customer;
 
-import java.util.Date;
 import java.util.Scanner;
 
 public class order {
@@ -14,7 +13,7 @@ public class order {
     private CardPayment OrderPayment;
     private String transactionID;
 
-    public order(int userID, String DeliveryAddress, CardPayment OrderPayment , cart orderCart,String DeliveryTime) {
+    public order(int userID, String DeliveryAddress, CardPayment OrderPayment ,cart orderCart,String DeliveryTime) {
         this.orderCart = orderCart;
         this.OrderPayment = OrderPayment;
         this.userID = userID;
@@ -24,23 +23,23 @@ public class order {
     }
     public void displayOrder(){
         System.out.println("\nOrder added successfully\n");
-        System.out.println("User ID: " + userID);
-        System.out.println("Restaurant Name: " + RestaurantName);
+        System.out.println("Customer ID: " + userID);
+        System.out.println("Restaurant Name: " + RestaurantName.toUpperCase());
         System.out.println("Delivery Address: " + DeliveryAddress);
         System.out.println("Delivery Time: " + DeliveryTime);
-        System.out.println("Order Payment: " + OrderPayment);
+        System.out.print("Order Payment: ");
+        OrderPayment.displayOrderCardPaymentInfo();
         System.out.println("Order : ");
         orderCart.displayOrder();
+        System.out.println("\n\n");
 
 
         OrderStatus orderStatus = new OrderStatus("Order Placed");
         Thread orderTrackingThread = new Thread(orderStatus);
         System.out.println("Order tracking started. You will see updates shortly...");
-        orderTrackingThread.run();
+        orderTrackingThread.start();
         Review.collectReview();
         Review.displayReviews();
-
-
     }
 
     public order(){}
@@ -74,7 +73,7 @@ public class order {
         return inputDelTime;
     }
 
-    public order(cart orderCart, User loggenInUser) {
+    public order(cart orderCart, Customer loggenInCustomer) {
         this.orderCart = orderCart;
     }
 

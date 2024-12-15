@@ -3,7 +3,7 @@ package Order;
 import Restaurant.displayMenu;
 import Restaurant_menu.menuItems;
 import fileHandling.fileHandle;
-import user.User;
+import user.Customer;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -24,19 +24,18 @@ public class order_procedure {
         this.Quantity = Quantity;
     }
     public order_procedure() {}
-    public static void order_items(User loggedInUser)
+    public static void order_items(Customer loggedInCustomer)
     {
         // Choosing a restaurant and placing an order
         int rest_choice = displayMenu.chooseRestaurant();
         displayMenu.displayMenuOfRestaurant(rest_choice);
+        loggedInCustomer.getCart().setRestaurantName(displayMenu.getChosenRestaurantName());
 
         boolean order_choice = false;
         while (!order_choice) {
             System.out.println("\nEnter the name of the item you would like to order:");
             String itemName = input.nextLine();
-            selectItem(rest_choice, itemName ,loggedInUser);
-
-            String ChosenRestaurantName = displayMenu.saveRestaurantName();
+            selectItem(rest_choice, itemName , loggedInCustomer);
 
             System.out.println("\nWould you like to order another item?");
             System.out.println("1. Yes");
@@ -57,10 +56,10 @@ public class order_procedure {
         }
     }
     // Static method to select an item and add it to the orderedItems list
-    public static void selectItem(int restId, String itemName, User loggedInUser) {
+    public static void selectItem(int restId, String itemName, Customer loggedInCustomer) {
 
-        if (loggedInUser.getCart() == null) {
-            loggedInUser.setCart(new cart());
+        if (loggedInCustomer.getCart() == null) {
+            loggedInCustomer.setCart(new cart());
         }
 
         ArrayList<menuItems> allMenuItems = fileHandle.readMenuItemsFromFile(restId);
@@ -87,12 +86,15 @@ public class order_procedure {
                         input.nextLine(); // Clear invalid input from the buffer
                     }
                 }
+
+                System.out.println("\n\n"+displayMenu.getChosenRestaurantName()+"\n\n");
                 // Add the item to the user's cart
-                loggedInUser.getCart().addItem(new cart(
+                loggedInCustomer.getCart().addItem(new cart(
                         menuItem.getName(),
                         menuItem.getDescription(),
                         menuItem.getPrice(),
-                        quantity,displayMenu.saveRestaurantName()));
+                        quantity));
+
                 System.out.println("\n" + quantity + " x " + menuItem.getName() + " added to your cart.");
                 break;
             }

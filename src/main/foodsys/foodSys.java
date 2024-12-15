@@ -4,11 +4,10 @@ import java.util.Scanner;
 import Order.*;
 import user.*;
 import Restaurant.*;
-import payments.*;
 
 public class foodSys
 {
-    public static User loggedInUser = null;
+    public static Customer loggedInCustomer = null;
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -25,11 +24,11 @@ public class foodSys
 
             switch (choice) {
                 case 1 -> {
-                    User.RegisterUser();
+                    Customer.RegisterUser();
                     postLoginMenu(input);
                 }
                 case 2 -> {
-                    loggedInUser=User.LoginUser();
+                    loggedInCustomer = Customer.LoginUser();
                     postLoginMenu(input);
                 }
                 case 3 -> {
@@ -59,15 +58,15 @@ public class foodSys
             int choiceNext = getValidInt(input);
 
             switch (choiceNext) {
-                case 1 -> order_procedure.order_items(loggedInUser);
+                case 1 -> order_procedure.order_items(loggedInCustomer);
                 case 2 -> search_filter.filterRestaurantsMenu(input);
                 case 3 -> {
-                    if(loggedInUser.getCart().displayCartMenu(loggedInUser)){
-                        loggedInUser.addCartToOrder();
+                    if(loggedInCustomer.getCart().displayCartMenu()){
+                        loggedInCustomer.addCartToOrder();
                     }
                 }
-                case 4 -> {if(loggedInUser.displayPaymentMethods()){
-                    loggedInUser.addPaymentMethod();
+                case 4 -> {if(loggedInCustomer.displayPaymentMethods()){
+                    loggedInCustomer.addPaymentMethod();
                 };
                 }
                 case 5 -> {

@@ -1,6 +1,7 @@
 package Order;
 
-import user.User;
+import Restaurant.displayMenu;
+import user.Customer;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -12,11 +13,9 @@ public class cart extends order_procedure {
     private ArrayList<order_procedure> cart_items=new ArrayList<>();
     private double total_price;
 
-    public cart(String ItemName, String Description, double Price, int Quantity,String RestaurantName) {
+    public cart(String ItemName, String Description, double Price, int Quantity) {
         super(ItemName, Description, Price, Quantity);
         cart_items.add(new order_procedure(ItemName, Description, Price, Quantity));
-        this.RestaurantName=RestaurantName;
-        //total_price=calculateTotalPrice(cart_items);
     }
     public cart(){
         super();
@@ -31,7 +30,7 @@ public class cart extends order_procedure {
         System.out.println("---------------------------");
         System.out.println("Total amount: $" + calculateTotalPrice());
     }
-    public boolean displayCartMenu(User loggedInUser) {
+    public boolean displayCartMenu() {
         boolean check1 = true;
         boolean check2 = true;
         boolean edits_On_Cart = false;
@@ -80,12 +79,8 @@ public class cart extends order_procedure {
                     check2=false;
                     if (edits_On_Cart) {
                         displayCartItems();
-                        addToOrderCheck = true;
                     }
-                    else {
-                        addToOrderCheck = true;
-
-                    }
+                    addToOrderCheck = true;
                 }
                 else if(userChoice3 == 3){
                     check1 = false;
@@ -131,6 +126,10 @@ public class cart extends order_procedure {
         System.out.println("Item not found!");
         return false;
     }
+    public void removeCart(){
+        cart_items.clear();
+        total_price=0;
+    }
     private double calculateTotalPrice() {
         total_price = 0.0; // Reset total price
         for (order_procedure item : cart_items) {
@@ -144,7 +143,10 @@ public class cart extends order_procedure {
     }
 
     public String getRestaurantName() {
-        return RestaurantName;
+        return this.RestaurantName;
+    }
+    public void setRestaurantName(String RestaurantName) {
+        this.RestaurantName = RestaurantName;
     }
 
     public  ArrayList<order_procedure> getItems() {

@@ -1,6 +1,6 @@
 package fileHandling;
 
-import user.User;
+import user.Customer;
 import Restaurant.restaurant;
 import Restaurant_menu.*;
 import payments.CardPayment;
@@ -15,8 +15,8 @@ public class fileHandle {
     private static final String MenuFilePath = "./files/menu.txt";
     private static final String PaymentFilePath = "./files/payment_methods.txt";
     //Method for reading user info
-    public static List<User> readUsersFromFile() {
-        List<User> users = new ArrayList<>();
+    public static List<Customer> readUsersFromFile() {
+        List<Customer> customers = new ArrayList<>();
         try
         {
             FileReader userFile = new FileReader(UserFilePath);
@@ -25,7 +25,7 @@ public class fileHandle {
             while (line != null)
             {
                 String[] user_info = line.split(",");
-                users.add(new User(Integer.parseInt(user_info[0]),user_info[1],user_info[2],user_info[3],user_info[4]));
+                customers.add(new Customer(Integer.parseInt(user_info[0]),user_info[1],user_info[2],user_info[3],user_info[4]));
                 line = br.readLine();
             }
             br.close();
@@ -33,12 +33,12 @@ public class fileHandle {
         }
         catch(IOException e)
         {
-            System.out.println("Error loading users: " + e.getMessage());
+            System.out.println("Error loading customers: " + e.getMessage());
         }
-        return users;
+        return customers;
     }
     //Method for writing user Info
-    public static void writeUsersToFile(List<User> users) {
+    public static void writeUsersToFile(List<Customer> customers) {
         int lines=0;
         try
         {
@@ -50,9 +50,9 @@ public class fileHandle {
                 lines ++;
             }
             String nlines = String.valueOf(lines);
-            for(User user : users)
+            for(Customer customer : customers)
             {
-                bw.write(nlines+","+user.getUsername()+","+user.getEmail()+","+user.getPassword()+","+user.getDeliveryAddress());
+                bw.write(nlines+","+ customer.getUsername()+","+ customer.getEmail()+","+ customer.getPassword()+","+ customer.getDeliveryAddress());
                 bw.newLine();
             }
             bw.close();
@@ -60,7 +60,7 @@ public class fileHandle {
         }
         catch(IOException e)
         {
-            System.out.println("Error writing users: " + e.getMessage());
+            System.out.println("Error writing customers: " + e.getMessage());
         }
     }
     //Method for reading restaurant info

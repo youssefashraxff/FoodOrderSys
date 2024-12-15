@@ -1,14 +1,12 @@
 package Restaurant_menu;
 
 public class menuItems {
-    private int Rest_Id;
     private String category;
     private String name;
     private String description;
     private double price;
 
     public menuItems(int Rest_Id, String name, double price,String description, String category) {
-        this.Rest_Id = Rest_Id;
         this.name = name;
         this.description = description;
         this.price = price;
@@ -36,5 +34,8 @@ public class menuItems {
     }
     public String getCategory() {
         return category;
+    }
+    public void setCategory(String category) {
+        this.category = category;
     }
 }

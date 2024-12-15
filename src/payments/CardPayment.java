@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import fileHandling.*;
-import user.User;
 
 public class CardPayment extends userPayment{
     static Scanner input = new Scanner(System.in);
@@ -174,7 +173,7 @@ public class CardPayment extends userPayment{
         // Debug: Print all available card numbers
         System.out.println("Available cards:");
         for (CardPayment card : userCards) {
-            System.out.println("Card: " + card.getCardNumber());
+            System.out.println("Card: **** **** **** "+card.getCardNumber().substring(12));
         }
 
         while (chosenCard == null) {
@@ -182,10 +181,9 @@ public class CardPayment extends userPayment{
             chosenCardNumber = scanner.nextLine().trim(); // Trim to remove unwanted spaces
 
             for (CardPayment card : userCards) {
-                // Debug: Print comparison for verification
-                System.out.println("Comparing input: " + chosenCardNumber + " with card: " + card.getCardNumber().substring(card.getCardNumber().length() - 4));
 
                 if (card.getCardNumber().endsWith(chosenCardNumber)) {
+                    System.out.println("Payment successfully chosen.");
                     chosenCard = card;
                     break; // Break the loop once the card is found
                 }
@@ -196,5 +194,8 @@ public class CardPayment extends userPayment{
             }
         }
         return chosenCard;
+    }
+    public void displayOrderCardPaymentInfo(){
+        System.out.println(getCardType()+" ending with "+getCardNumber().substring(12));
     }
 }
