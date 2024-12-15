@@ -6,17 +6,18 @@ import java.util.Scanner;
 
 import fileHandling.*;
 
-public class CardPayment extends userPayment{
+public class CardPayment{
     static Scanner input = new Scanner(System.in);
 
     private String userID;
+    private String paymentMethod;
     private String cardNumber;
     private String expiryDate;
     private String cvv;
     private String cardHolderName;
 
     public CardPayment(String userID,String paymentMethod,String cardNumber, String expiryDate, String cvv, String cardHolderName) {
-        super(paymentMethod);
+        this.paymentMethod = paymentMethod;
         this.userID = userID;
         this.cardNumber = cardNumber;
         this.expiryDate = expiryDate;
@@ -26,8 +27,11 @@ public class CardPayment extends userPayment{
     public CardPayment() {
 
     }
+    public CardPayment(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
+    }
     public String getCardType(){
-        return getPaymentMethod();
+        return paymentMethod;
     }
     public String getCardNumber() {
         return cardNumber;

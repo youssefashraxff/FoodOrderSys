@@ -106,7 +106,7 @@ public class cart extends order_procedure {
     public boolean removeItem(String removedItem ) {
         int quantity;
         for (order_procedure item : cart_items) {
-            if (item.getItemName().equals(removedItem)) {
+            if (item.getItemName().equalsIgnoreCase(removedItem)) {
                 while (true){
                     System.out.println("Enter quantity to remove: ");
                     quantity = input.nextInt();

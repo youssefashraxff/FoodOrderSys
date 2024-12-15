@@ -1,220 +1,220 @@
-1|Koshary|65.00|A traditional mix of rice, lentils, chickpeas, and macaroni topped with crispy onions and tangy tomato sauce.|Main Item
-1|Molokhia|76.00|A classic Egyptian soup made from finely chopped jute leaves, flavored with garlic and coriander, served with rice.|Main Item
-1|Stuffed Pigeon|36.00|Whole roasted pigeon stuffed with a spiced rice or freekeh mixture, cooked to perfection.|Main Item
-1|Hawawshi|45.00|Minced meat mixed with onions, peppers, and spices, stuffed inside pita bread and oven-baked.|Main Item
-1|Fried Eggplant|64.00|Thinly sliced eggplant, lightly battered and fried until golden, served with a hint of garlic.|Sides
-1|Pickles|78.00|An assortment of pickled cucumbers, turnips, and carrots, marinated in vinegar and spices.|Sides
-1|Hibiscus Drink|45.00|A cold beverage made from dried hibiscus petals, offering a tart and refreshing flavor.|Beverages
-1|Mint Lemonade|74.00|Freshly squeezed lemons blended with mint leaves and served chilled with a hint of sugar.|Beverages
-1|Basbousa|39.00|Basbousa: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-1|Konafa|93.00|Konafa: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-2|Koshary|59.00|A traditional mix of rice, lentils, chickpeas, and macaroni topped with crispy onions and tangy tomato sauce.|Main Item
-2|Molokhia|29.00|A classic Egyptian soup made from finely chopped jute leaves, flavored with garlic and coriander, served with rice.|Main Item
-2|Stuffed Pigeon|47.00|Whole roasted pigeon stuffed with a spiced rice or freekeh mixture, cooked to perfection.|Main Item
-2|Hawawshi|59.00|Minced meat mixed with onions, peppers, and spices, stuffed inside pita bread and oven-baked.|Main Item
-2|Fried Eggplant|50.00|Thinly sliced eggplant, lightly battered and fried until golden, served with a hint of garlic.|Sides
-2|Pickles|92.00|An assortment of pickled cucumbers, turnips, and carrots, marinated in vinegar and spices.|Sides
-2|Hibiscus Drink|75.00|A cold beverage made from dried hibiscus petals, offering a tart and refreshing flavor.|Beverages
-2|Mint Lemonade|63.00|Freshly squeezed lemons blended with mint leaves and served chilled with a hint of sugar.|Beverages
-2|Basbousa|78.00|Basbousa: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-2|Konafa|22.00|Konafa: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-3|Shawarma|23.00|Thinly sliced marinated meat wrapped in flatbread with tahini sauce, pickles, and fresh vegetables.|Main Item
-3|Kebab|29.00|Juicy skewers of seasoned minced meat grilled over an open flame, served with onions and parsley.|Main Item
-3|Falafel|37.00|Deep-fried patties made from ground chickpeas, fresh parsley, and spices, served with tahini sauce.|Main Item
-3|Mansaf|55.00|Mansaf: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-3|Hummus|88.00|Hummus: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-3|Tabbouleh|44.00|Tabbouleh: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-3|Ayran|43.00|Ayran: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-3|Arabic Coffee|44.00|Arabic Coffee: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-3|Baklava|36.00|Flaky layers of pastry filled with chopped nuts and sweetened with honey syrup.|Desserts
-3|Halva|47.00|Halva: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-4|BBQ Ribs|62.00|BBQ Ribs: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-4|Grilled Chicken|33.00|Grilled Chicken: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-4|Steak|99.00|Steak: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-4|Lamb Chops|76.00|Lamb Chops: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-4|Corn on the Cob|80.00|Corn on the Cob: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-4|Coleslaw|77.00|Coleslaw: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-4|Iced Tea|38.00|Iced Tea: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-4|Soda|91.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-4|Brownies|67.00|Brownies: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-4|Cheesecake|23.00|Cheesecake: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-5|Cheese Pie|26.00|Cheese Pie: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-5|Spinach Pie|54.00|Spinach Pie: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-5|Croissant|73.00|Croissant: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-5|Baguette|56.00|Baguette: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-5|Butter|42.00|Butter: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-5|Jam|58.00|Jam: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-5|Hot Chocolate|89.00|Hot Chocolate: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-5|Espresso|55.00|Espresso: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-5|Danish|53.00|Danish: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-5|Eclair|47.00|Eclair: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-6|Pizza|81.00|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
-6|Burger|81.00|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-6|Pasta|34.00|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-6|Tacos|20.00|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-6|French Fries|31.00|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-6|Garlic Bread|79.00|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
-6|Soda|36.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-6|Smoothie|63.00|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-6|Ice Cream|60.00|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-6|Tiramisu|80.00|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
-7|Pizza|77.00|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
-7|Burger|100.00|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-7|Pasta|21.00|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-7|Tacos|85.00|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-7|French Fries|92.00|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-7|Garlic Bread|68.00|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
-7|Soda|76.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-7|Smoothie|74.00|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-7|Ice Cream|79.00|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-7|Tiramisu|28.00|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
-8|Pizza|100.00|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
-8|Burger|81.00|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-8|Pasta|62.00|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-8|Tacos|79.00|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-8|French Fries|96.00|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-8|Garlic Bread|72.00|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
-8|Soda|30.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-8|Smoothie|70.00|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-8|Ice Cream|82.00|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-8|Tiramisu|65.00|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
-9|Shawarma|58.00|Thinly sliced marinated meat wrapped in flatbread with tahini sauce, pickles, and fresh vegetables.|Main Item
-9|Kebab|73.00|Juicy skewers of seasoned minced meat grilled over an open flame, served with onions and parsley.|Main Item
-9|Falafel|42.00|Deep-fried patties made from ground chickpeas, fresh parsley, and spices, served with tahini sauce.|Main Item
-9|Mansaf|39.00|Mansaf: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-9|Hummus|84.00|Hummus: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-9|Tabbouleh|74.00|Tabbouleh: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-9|Ayran|55.00|Ayran: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-9|Arabic Coffee|84.00|Arabic Coffee: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-9|Baklava|64.00|Flaky layers of pastry filled with chopped nuts and sweetened with honey syrup.|Desserts
-9|Halva|70.00|Halva: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-10|Big Mac|90.00|A double-layered burger with beef patties, lettuce, pickles, onions, and a tangy special sauce.|Main Item
-10|Zinger Burger|87.00|A crispy and spicy chicken fillet sandwich topped with lettuce and mayo, served in a soft bun.|Main Item
-10|Chicken Nuggets|86.00|Chicken Nuggets: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-10|Fries|55.00|Crispy golden potato fries, lightly seasoned with salt and served hot.|Main Item
-10|Mashed Potatoes|21.00|Mashed Potatoes: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-10|Corn|69.00|Corn: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-10|Soda|27.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-10|Milkshake|85.00|Milkshake: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-10|Sundae|65.00|Creamy vanilla ice cream topped with rich chocolate or caramel sauce.|Desserts
-10|Apple Pie|55.00|Apple Pie: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-11|Big Mac|82.00|A double-layered burger with beef patties, lettuce, pickles, onions, and a tangy special sauce.|Main Item
-11|Zinger Burger|86.00|A crispy and spicy chicken fillet sandwich topped with lettuce and mayo, served in a soft bun.|Main Item
-11|Chicken Nuggets|29.00|Chicken Nuggets: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-11|Fries|91.00|Crispy golden potato fries, lightly seasoned with salt and served hot.|Main Item
-11|Mashed Potatoes|68.00|Mashed Potatoes: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-11|Corn|96.00|Corn: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-11|Soda|32.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-11|Milkshake|50.00|Milkshake: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-11|Sundae|75.00|Creamy vanilla ice cream topped with rich chocolate or caramel sauce.|Desserts
-11|Apple Pie|75.00|Apple Pie: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-12|Big Mac|88.00|A double-layered burger with beef patties, lettuce, pickles, onions, and a tangy special sauce.|Main Item
-12|Zinger Burger|92.00|A crispy and spicy chicken fillet sandwich topped with lettuce and mayo, served in a soft bun.|Main Item
-12|Chicken Nuggets|20.00|Chicken Nuggets: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-12|Fries|68.00|Crispy golden potato fries, lightly seasoned with salt and served hot.|Main Item
-12|Mashed Potatoes|22.00|Mashed Potatoes: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-12|Corn|97.00|Corn: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-12|Soda|24.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-12|Milkshake|90.00|Milkshake: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-12|Sundae|95.00|Creamy vanilla ice cream topped with rich chocolate or caramel sauce.|Desserts
-12|Apple Pie|39.00|Apple Pie: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-13|Big Mac|58.00|A double-layered burger with beef patties, lettuce, pickles, onions, and a tangy special sauce.|Main Item
-13|Zinger Burger|83.00|A crispy and spicy chicken fillet sandwich topped with lettuce and mayo, served in a soft bun.|Main Item
-13|Chicken Nuggets|78.00|Chicken Nuggets: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-13|Fries|68.00|Crispy golden potato fries, lightly seasoned with salt and served hot.|Main Item
-13|Mashed Potatoes|94.00|Mashed Potatoes: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-13|Corn|92.00|Corn: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-13|Soda|33.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-13|Milkshake|43.00|Milkshake: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-13|Sundae|39.00|Creamy vanilla ice cream topped with rich chocolate or caramel sauce.|Desserts
-13|Apple Pie|68.00|Apple Pie: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-14|Pizza|98.00|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
-14|Burger|30.00|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-14|Pasta|95.00|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-14|Tacos|38.00|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-14|French Fries|42.00|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-14|Garlic Bread|30.00|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
-14|Soda|53.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-14|Smoothie|89.00|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-14|Ice Cream|20.00|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-14|Tiramisu|63.00|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
-15|Pizza|22.00|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
-15|Burger|93.00|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-15|Pasta|52.00|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-15|Tacos|51.00|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-15|French Fries|97.00|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-15|Garlic Bread|100.00|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
-15|Soda|73.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-15|Smoothie|58.00|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-15|Ice Cream|38.00|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-15|Tiramisu|98.00|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
-16|Pizza|42.00|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
-16|Burger|51.00|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-16|Pasta|94.00|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-16|Tacos|53.00|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-16|French Fries|43.00|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-16|Garlic Bread|41.00|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
-16|Soda|94.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-16|Smoothie|88.00|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-16|Ice Cream|63.00|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-16|Tiramisu|74.00|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
-17|Pizza|76.00|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
-17|Burger|76.00|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-17|Pasta|86.00|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-17|Tacos|85.00|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-17|French Fries|96.00|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-17|Garlic Bread|78.00|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
-17|Soda|80.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-17|Smoothie|92.00|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-17|Ice Cream|23.00|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-17|Tiramisu|33.00|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
-18|Pizza|57.00|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
-18|Burger|45.00|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-18|Pasta|30.00|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-18|Tacos|89.00|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-18|French Fries|82.00|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-18|Garlic Bread|51.00|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
-18|Soda|85.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-18|Smoothie|97.00|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-18|Ice Cream|31.00|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-18|Tiramisu|97.00|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
-19|Pizza|52.00|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
-19|Burger|64.00|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-19|Pasta|51.00|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-19|Tacos|84.00|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-19|French Fries|31.00|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-19|Garlic Bread|21.00|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
-19|Soda|99.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-19|Smoothie|30.00|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-19|Ice Cream|87.00|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-19|Tiramisu|92.00|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
-20|Pizza|45.00|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
-20|Burger|89.00|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-20|Pasta|52.00|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-20|Tacos|60.00|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-20|French Fries|41.00|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-20|Garlic Bread|43.00|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
-20|Soda|84.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-20|Smoothie|57.00|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-20|Ice Cream|80.00|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-20|Tiramisu|66.00|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
-21|Pizza|90.00|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
-21|Burger|29.00|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-21|Pasta|69.00|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-21|Tacos|60.00|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-21|French Fries|62.00|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-21|Garlic Bread|65.00|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
-21|Soda|32.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-21|Smoothie|72.00|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-21|Ice Cream|71.00|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-21|Tiramisu|92.00|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
-22|Pizza|74.00|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
-22|Burger|35.00|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-22|Pasta|72.00|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-22|Tacos|46.00|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
-22|French Fries|46.00|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-22|Garlic Bread|40.00|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
-22|Soda|90.00|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-22|Smoothie|62.00|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
-22|Ice Cream|88.00|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
-22|Tiramisu|73.00|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
+1|Koshary|65.0|A traditional mix of rice, lentils, chickpeas, and macaroni topped with crispy onions and tangy tomato sauce.|Main Item
+1|Molokhia|76.0|A classic Egyptian soup made from finely chopped jute leaves, flavored with garlic and coriander, served with rice.|Main Item
+1|Stuffed Pigeon|36.0|Whole roasted pigeon stuffed with a spiced rice or freekeh mixture, cooked to perfection.|Main Item
+1|Hawawshi|45.0|Minced meat mixed with onions, peppers, and spices, stuffed inside pita bread and oven-baked.|Main Item
+1|Fried Eggplant|64.0|Thinly sliced eggplant, lightly battered and fried until golden, served with a hint of garlic.|Sides
+1|Pickles|78.0|An assortment of pickled cucumbers, turnips, and carrots, marinated in vinegar and spices.|Sides
+1|Hibiscus Drink|45.0|A cold beverage made from dried hibiscus petals, offering a tart and refreshing flavor.|Beverages
+1|Mint Lemonade|74.0|Freshly squeezed lemons blended with mint leaves and served chilled with a hint of sugar.|Beverages
+1|Basbousa|39.0|Basbousa: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+1|Konafa|93.0|Konafa: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+2|Koshary|59.0|A traditional mix of rice, lentils, chickpeas, and macaroni topped with crispy onions and tangy tomato sauce.|Main Item
+2|Molokhia|29.0|A classic Egyptian soup made from finely chopped jute leaves, flavored with garlic and coriander, served with rice.|Main Item
+2|Stuffed Pigeon|47.0|Whole roasted pigeon stuffed with a spiced rice or freekeh mixture, cooked to perfection.|Main Item
+2|Hawawshi|59.0|Minced meat mixed with onions, peppers, and spices, stuffed inside pita bread and oven-baked.|Main Item
+2|Fried Eggplant|50.0|Thinly sliced eggplant, lightly battered and fried until golden, served with a hint of garlic.|Sides
+2|Pickles|92.0|An assortment of pickled cucumbers, turnips, and carrots, marinated in vinegar and spices.|Sides
+2|Hibiscus Drink|75.0|A cold beverage made from dried hibiscus petals, offering a tart and refreshing flavor.|Beverages
+2|Mint Lemonade|63.0|Freshly squeezed lemons blended with mint leaves and served chilled with a hint of sugar.|Beverages
+2|Basbousa|78.0|Basbousa: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+2|Konafa|22.0|Konafa: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+3|Shawarma|23.0|Thinly sliced marinated meat wrapped in flatbread with tahini sauce, pickles, and fresh vegetables.|Main Item
+3|Kebab|29.0|Juicy skewers of seasoned minced meat grilled over an open flame, served with onions and parsley.|Main Item
+3|Falafel|37.0|Deep-fried patties made from ground chickpeas, fresh parsley, and spices, served with tahini sauce.|Main Item
+3|Mansaf|55.0|Mansaf: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+3|Hummus|88.0|Hummus: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+3|Tabbouleh|44.0|Tabbouleh: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+3|Ayran|43.0|Ayran: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+3|Arabic Coffee|44.0|Arabic Coffee: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+3|Baklava|36.0|Flaky layers of pastry filled with chopped nuts and sweetened with honey syrup.|Desserts
+3|Halva|47.0|Halva: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+4|BBQ Ribs|62.0|BBQ Ribs: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+4|Grilled Chicken|33.0|Grilled Chicken: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+4|Steak|99.0|Steak: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+4|Lamb Chops|76.0|Lamb Chops: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+4|Corn on the Cob|80.0|Corn on the Cob: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+4|Coleslaw|77.0|Coleslaw: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+4|Iced Tea|38.0|Iced Tea: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+4|Soda|91.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+4|Brownies|67.0|Brownies: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+4|Cheesecake|23.0|Cheesecake: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+5|Cheese Pie|26.0|Cheese Pie: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+5|Spinach Pie|54.0|Spinach Pie: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+5|Croissant|73.0|Croissant: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+5|Baguette|56.0|Baguette: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+5|Butter|42.0|Butter: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+5|Jam|58.0|Jam: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+5|Hot Chocolate|89.0|Hot Chocolate: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+5|Espresso|55.0|Espresso: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+5|Danish|53.0|Danish: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+5|Eclair|47.0|Eclair: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+6|Pizza|81.0|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
+6|Burger|81.0|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+6|Pasta|34.0|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+6|Tacos|20.0|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+6|French Fries|31.0|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+6|Garlic Bread|79.0|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
+6|Soda|36.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+6|Smoothie|63.0|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+6|Ice Cream|60.0|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+6|Tiramisu|80.0|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
+7|Pizza|77.0|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
+7|Burger|100.0|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+7|Pasta|21.0|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+7|Tacos|85.0|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+7|French Fries|92.0|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+7|Garlic Bread|68.0|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
+7|Soda|76.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+7|Smoothie|70.0|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+7|Ice Cream|79.0|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+7|Tiramisu|28.0|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
+8|Pizza|100.0|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
+8|Burger|81.0|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+8|Pasta|62.0|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+8|Tacos|79.0|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+8|French Fries|96.0|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+8|Garlic Bread|72.0|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
+8|Soda|30.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+8|Smoothie|70.0|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+8|Ice Cream|82.0|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+8|Tiramisu|65.0|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
+9|Shawarma|58.0|Thinly sliced marinated meat wrapped in flatbread with tahini sauce, pickles, and fresh vegetables.|Main Item
+9|Kebab|73.0|Juicy skewers of seasoned minced meat grilled over an open flame, served with onions and parsley.|Main Item
+9|Falafel|42.0|Deep-fried patties made from ground chickpeas, fresh parsley, and spices, served with tahini sauce.|Main Item
+9|Mansaf|39.0|Mansaf: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+9|Hummus|84.0|Hummus: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+9|Tabbouleh|74.0|Tabbouleh: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+9|Ayran|55.0|Ayran: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+9|Arabic Coffee|84.0|Arabic Coffee: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+9|Baklava|64.0|Flaky layers of pastry filled with chopped nuts and sweetened with honey syrup.|Desserts
+9|Halva|70.0|Halva: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+10|Big Mac|90.0|A double-layered burger with beef patties, lettuce, pickles, onions, and a tangy special sauce.|Main Item
+10|Zinger Burger|87.0|A crispy and spicy chicken fillet sandwich topped with lettuce and mayo, served in a soft bun.|Main Item
+10|Chicken Nuggets|86.0|Chicken Nuggets: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+10|Fries|55.0|Crispy golden potato fries, lightly seasoned with salt and served hot.|Main Item
+10|Mashed Potatoes|21.0|Mashed Potatoes: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+10|Corn|69.0|Corn: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+10|Soda|27.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+10|Milkshake|85.0|Milkshake: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+10|Sundae|65.0|Creamy vanilla ice cream topped with rich chocolate or caramel sauce.|Desserts
+10|Apple Pie|55.0|Apple Pie: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+11|Big Mac|82.0|A double-layered burger with beef patties, lettuce, pickles, onions, and a tangy special sauce.|Main Item
+11|Zinger Burger|86.0|A crispy and spicy chicken fillet sandwich topped with lettuce and mayo, served in a soft bun.|Main Item
+11|Chicken Nuggets|29.0|Chicken Nuggets: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+11|Fries|91.0|Crispy golden potato fries, lightly seasoned with salt and served hot.|Main Item
+11|Mashed Potatoes|68.0|Mashed Potatoes: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+11|Corn|96.0|Corn: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+11|Soda|32.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+11|Milkshake|50.0|Milkshake: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+11|Sundae|75.0|Creamy vanilla ice cream topped with rich chocolate or caramel sauce.|Desserts
+11|Apple Pie|75.0|Apple Pie: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+12|Big Mac|88.0|A double-layered burger with beef patties, lettuce, pickles, onions, and a tangy special sauce.|Main Item
+12|Zinger Burger|92.0|A crispy and spicy chicken fillet sandwich topped with lettuce and mayo, served in a soft bun.|Main Item
+12|Chicken Nuggets|20.0|Chicken Nuggets: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+12|Fries|68.0|Crispy golden potato fries, lightly seasoned with salt and served hot.|Main Item
+12|Mashed Potatoes|22.0|Mashed Potatoes: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+12|Corn|97.0|Corn: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+12|Soda|24.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+12|Milkshake|90.0|Milkshake: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+12|Sundae|95.0|Creamy vanilla ice cream topped with rich chocolate or caramel sauce.|Desserts
+12|Apple Pie|39.0|Apple Pie: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+13|Big Mac|58.0|A double-layered burger with beef patties, lettuce, pickles, onions, and a tangy special sauce.|Main Item
+13|Zinger Burger|83.0|A crispy and spicy chicken fillet sandwich topped with lettuce and mayo, served in a soft bun.|Main Item
+13|Chicken Nuggets|78.0|Chicken Nuggets: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+13|Fries|68.0|Crispy golden potato fries, lightly seasoned with salt and served hot.|Main Item
+13|Mashed Potatoes|94.0|Mashed Potatoes: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+13|Corn|92.0|Corn: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+13|Soda|33.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+13|Milkshake|43.0|Milkshake: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+13|Sundae|39.0|Creamy vanilla ice cream topped with rich chocolate or caramel sauce.|Desserts
+13|Apple Pie|68.0|Apple Pie: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+14|Pizza|98.0|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
+14|Burger|30.0|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+14|Pasta|95.0|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+14|Tacos|38.0|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+14|French Fries|42.0|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+14|Garlic Bread|30.0|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
+14|Soda|53.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+14|Smoothie|89.0|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+14|Ice Cream|20.0|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+14|Tiramisu|63.0|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
+15|Pizza|22.0|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
+15|Burger|93.0|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+15|Pasta|52.0|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+15|Tacos|51.0|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+15|French Fries|97.0|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+15|Garlic Bread|100.0|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
+15|Soda|73.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+15|Smoothie|58.0|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+15|Ice Cream|38.0|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+15|Tiramisu|98.0|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
+16|Pizza|42.0|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
+16|Burger|51.0|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+16|Pasta|94.0|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+16|Tacos|53.0|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+16|French Fries|43.0|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+16|Garlic Bread|41.0|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
+16|Soda|94.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+16|Smoothie|88.0|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+16|Ice Cream|63.0|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+16|Tiramisu|74.0|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
+17|Pizza|76.0|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
+17|Burger|76.0|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+17|Pasta|86.0|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+17|Tacos|85.0|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+17|French Fries|96.0|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+17|Garlic Bread|78.0|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
+17|Soda|80.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+17|Smoothie|92.0|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+17|Ice Cream|23.0|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+17|Tiramisu|33.0|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
+18|Pizza|57.0|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
+18|Burger|45.0|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+18|Pasta|30.0|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+18|Tacos|89.0|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+18|French Fries|82.0|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+18|Garlic Bread|51.0|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
+18|Soda|85.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+18|Smoothie|97.0|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+18|Ice Cream|31.0|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+18|Tiramisu|97.0|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
+19|Pizza|52.0|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
+19|Burger|64.0|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+19|Pasta|51.0|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+19|Tacos|84.0|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+19|French Fries|31.0|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+19|Garlic Bread|21.0|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
+19|Soda|99.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+19|Smoothie|30.0|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+19|Ice Cream|87.0|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+19|Tiramisu|92.0|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
+20|Pizza|45.0|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
+20|Burger|89.0|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+20|Pasta|52.0|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+20|Tacos|60.0|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+20|French Fries|41.0|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+20|Garlic Bread|43.0|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
+20|Soda|84.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+20|Smoothie|57.0|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+20|Ice Cream|80.0|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+20|Tiramisu|66.0|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
+21|Pizza|90.0|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
+21|Burger|29.0|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+21|Pasta|69.0|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+21|Tacos|60.0|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+21|French Fries|62.0|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+21|Garlic Bread|65.0|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
+21|Soda|32.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+21|Smoothie|72.0|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+21|Ice Cream|71.0|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+21|Tiramisu|92.0|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts
+22|Pizza|74.0|A hand-tossed pizza crust topped with tomato sauce, mozzarella cheese, and your choice of fresh toppings.|Main Item
+22|Burger|35.0|Burger: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+22|Pasta|72.0|Pasta: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+22|Tacos|46.0|Tacos: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
+22|French Fries|46.0|French Fries: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+22|Garlic Bread|40.0|Sliced bread toasted with garlic butter and herbs, perfect as a starter or side.|Sides
+22|Soda|90.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+22|Smoothie|62.0|Smoothie: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
+22|Ice Cream|88.0|Ice Cream: A signature desserts crafted with the finest ingredients, offering an authentic taste experience.|Desserts
+22|Tiramisu|73.0|An Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder.|Desserts

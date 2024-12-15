@@ -58,6 +58,7 @@ public class Customer extends User {
             System.out.println("\nPayment Method:\n1. Cash\n2. Credit/Debit Card");
             inputPayment = input.nextInt();
             if(inputPayment == 1){
+                OrderCardPayment = new CardPayment("Cash");
                 break;
             }
             else if(inputPayment == 2){

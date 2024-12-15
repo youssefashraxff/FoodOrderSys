@@ -142,9 +142,36 @@ public class fileHandle {
         }
         return items;
     }
+    public static ArrayList<menuItems> read_all_MenuItemsFromFile() {
+        ArrayList<menuItems> items = new ArrayList<>();
+        try {
+            FileReader menuFile = new FileReader(MenuFilePath);
+            BufferedReader br = new BufferedReader(menuFile);
+            String line = br.readLine();
+            while (line != null)
+            {
+                String[] Item_info = line.split("\\|");
+                int Id = Integer.parseInt(Item_info[0]);
+                String Name = Item_info[1];
+                String Description = Item_info[3];
+                double Price = Double.parseDouble(Item_info[2]);
+                String Category = Item_info[4];
+                items.add(new menuItems(Id, Name, Price, Description, Category));
+
+                line = br.readLine();
+            }
+            br.close();
+            menuFile.close();
+        }
+        catch(IOException e)
+        {
+            System.out.println("Error loading menu items: " + e.getMessage());
+        }
+        return items;
+    }
     //Method for writing menu item
     public static void writeMenuItemsToFile(ArrayList<menuItems> items) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(MenuFilePath, true))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(MenuFilePath))) {
             for (menuItems item : items) {
                 String line = String.join("|",
                         String.valueOf(item.getRest_Id()),

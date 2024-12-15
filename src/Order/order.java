@@ -29,7 +29,11 @@ public class order {
         System.out.println("Delivery Address: " + DeliveryAddress);
         System.out.println("Delivery Time: " + DeliveryTime);
         System.out.print("Order Payment: ");
-        OrderPayment.displayOrderCardPaymentInfo();
+        if(OrderPayment.getCardType().equals("Cash")){
+            System.out.println(OrderPayment.getCardType());
+        }else{
+            OrderPayment.displayOrderCardPaymentInfo();
+        }
         System.out.println("Order : ");
         orderCart.displayOrder();
         System.out.println("\n\n");
