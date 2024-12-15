@@ -9,13 +9,13 @@ import fileHandling.*;
 public class CardPayment extends userPayment{
     static Scanner input = new Scanner(System.in);
 
-    private int userID;
+    private String userID;
     private String cardNumber;
     private String expiryDate;
     private String cvv;
     private String cardHolderName;
 
-    public CardPayment(int userID,String paymentMethod,String cardNumber, String expiryDate, String cvv, String cardHolderName) {
+    public CardPayment(String userID,String paymentMethod,String cardNumber, String expiryDate, String cvv, String cardHolderName) {
         super(paymentMethod);
         this.userID = userID;
         this.cardNumber = cardNumber;
@@ -91,7 +91,7 @@ public class CardPayment extends userPayment{
         System.out.println("Processing credit card payment for " + cardHolderName + "...");
         return true; // Payment successful
     }
-    public CardPayment add_CreditCard_info(int TempUserId) {
+    public CardPayment add_CreditCard_info(String TempUserId) {
         String input_CardType;
         String input_CardNumber;
         String input_ExpiryDate;
@@ -132,7 +132,7 @@ public class CardPayment extends userPayment{
 
         return new CardPayment(TempUserId, input_CardType, input_CardNumber, input_ExpiryDate, input_Cvv, input_CardHolder);
     }
-    public static boolean displayCardInfo(int userID){
+    public static boolean displayCardInfo(String userID){
         ArrayList<CardPayment> userCards = fileHandle.readPaymentMethodFromFile(userID);
 
         int userChoice;

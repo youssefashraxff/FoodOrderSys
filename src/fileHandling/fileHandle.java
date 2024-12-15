@@ -1,6 +1,6 @@
 package fileHandling;
 
-import user.Customer;
+import user.*;
 import Restaurant.restaurant;
 import Restaurant_menu.*;
 import payments.CardPayment;
@@ -11,6 +11,7 @@ import java.util.List;
 public class fileHandle {
     //File path to user text file
     private static final String UserFilePath = "./files/users.txt";
+    private static final String AdminFilePath = "./files/admins.txt";
     private static final String RestaurantFilePath = "./files/restaurants.txt";
     private static final String MenuFilePath = "./files/menu.txt";
     private static final String PaymentFilePath = "./files/payment_methods.txt";
@@ -25,7 +26,7 @@ public class fileHandle {
             while (line != null)
             {
                 String[] user_info = line.split(",");
-                customers.add(new Customer(Integer.parseInt(user_info[0]),user_info[1],user_info[2],user_info[3],user_info[4]));
+                customers.add(new Customer(user_info[0],user_info[1],user_info[2],user_info[3],user_info[4]));
                 line = br.readLine();
             }
             br.close();
@@ -62,6 +63,29 @@ public class fileHandle {
         {
             System.out.println("Error writing customers: " + e.getMessage());
         }
+    }
+    //Method for reading admin info
+    public static List<Admin> readAdminsFromFile() {
+        List<Admin> admins = new ArrayList<>();
+        try
+        {
+            FileReader adminFile = new FileReader(AdminFilePath);
+            BufferedReader br = new BufferedReader(adminFile);
+            String line = br.readLine();
+            while (line != null)
+            {
+                String[] admin_info = line.split(",");
+                admins.add(new Admin(admin_info[0],admin_info[1],admin_info[2]));
+                line = br.readLine();
+            }
+            br.close();
+            adminFile.close();
+        }
+        catch(IOException e)
+        {
+            System.out.println("Error loading admins: " + e.getMessage());
+        }
+        return admins;
     }
     //Method for reading restaurant info
     public static ArrayList<restaurant> readRestaurantFromFile() {
@@ -125,7 +149,7 @@ public class fileHandle {
         return items;
     }
     //Method for reading payment info
-    public static ArrayList<CardPayment> readPaymentMethodFromFile(int UserId) {
+    public static ArrayList<CardPayment> readPaymentMethodFromFile(String UserId) {
         ArrayList<CardPayment> user_payment_methods = new ArrayList<>();
         try{
             FileReader fileReader = new FileReader(PaymentFilePath);
@@ -133,9 +157,9 @@ public class fileHandle {
             String line = br.readLine();
             while(line != null){
                 String[] payment_info = line.split("\\|");
-                int Id = Integer.parseInt(payment_info[0]);
+                String Id = payment_info[0];
 
-                if (UserId == Id){
+                if (UserId.equals(Id)){
                     String cardType = payment_info[1];
                     String cardNumber = payment_info[2];
                     String expiryDate = payment_info[3];
@@ -154,7 +178,7 @@ public class fileHandle {
         return user_payment_methods;
     }
     //Method for writing payment info
-    public static void writePaymentMethodToFile(ArrayList<CardPayment> payment_methods, int userId) {
+    public static void writePaymentMethodToFile(ArrayList<CardPayment> payment_methods, String userId) {
         try {
             FileWriter fileWriter = new FileWriter(PaymentFilePath, true);
             BufferedWriter bw = new BufferedWriter(fileWriter);

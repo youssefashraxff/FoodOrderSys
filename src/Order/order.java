@@ -6,14 +6,14 @@ import java.util.Scanner;
 
 public class order {
     private cart orderCart;
-    private int userID;
+    private String userID;
     private String DeliveryAddress;
     private String RestaurantName;
     private String DeliveryTime;
     private CardPayment OrderPayment;
     private String transactionID;
 
-    public order(int userID, String DeliveryAddress, CardPayment OrderPayment ,cart orderCart,String DeliveryTime) {
+    public order(String userID, String DeliveryAddress, CardPayment OrderPayment ,cart orderCart,String DeliveryTime) {
         this.orderCart = orderCart;
         this.OrderPayment = OrderPayment;
         this.userID = userID;
@@ -84,10 +84,10 @@ public class order {
         this.orderCart = orderCart;
     }
 
-    public int getUserID() {
+    public String getUserID() {
         return userID;
     }
-    public void setUserID(int userID) {
+    public void setUserID(String userID) {
         this.userID = userID;
     }
 

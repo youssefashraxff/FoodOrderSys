@@ -1,13 +1,18 @@
 package main.foodsys;
+import java.util.List;
 import java.util.Scanner;
 
 import Order.*;
+import fileHandling.fileHandle;
 import user.*;
 import Restaurant.*;
 
 public class foodSys
 {
+    public static User loggedInUser = null;
     public static Customer loggedInCustomer = null;
+    public static Admin loggedInAdmin = null;
+    private static final List<Customer> customers = fileHandle.readUsersFromFile();
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -25,11 +30,20 @@ public class foodSys
             switch (choice) {
                 case 1 -> {
                     Customer.RegisterUser();
-                    postLoginMenu(input);
+                    postLoginMenu_customer(input);
                 }
                 case 2 -> {
-                    loggedInCustomer = Customer.LoginUser();
-                    postLoginMenu(input);
+                    loggedInUser = User.LoginUser();
+
+                    if (loggedInUser instanceof Customer) {
+                        loggedInCustomer = (Customer) loggedInUser;
+                        postLoginMenu_customer(input);
+                    }
+                    else if (loggedInUser instanceof Admin){
+                        loggedInAdmin = (Admin) loggedInUser;
+                        postLoginMenu_admin(input);
+                    }
+
                 }
                 case 3 -> {
                     System.out.println("Goodbye!");
@@ -42,7 +56,7 @@ public class foodSys
         input.close();
     }
     // Method to display the post-login menu
-    private static void postLoginMenu(Scanner input) {
+    private static void postLoginMenu_customer(Scanner input) {
         displayRestaurants display = new displayRestaurants();
         display.displayRestaurnats_default();
         boolean inMenu = true;
@@ -77,6 +91,7 @@ public class foodSys
             }
         }
     }
+    private static void postLoginMenu_admin(Scanner input) {}
     public static int getValidInt(Scanner input) {
         while (true) {
             try {
