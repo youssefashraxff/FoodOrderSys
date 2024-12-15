@@ -75,9 +75,20 @@ public class Customer extends User {
             }
         }
         System.out.println("\n\n"+ Usercart.getRestaurantName()+"\n\n");
-        UserOrder = new order(this.UserID,this.deliveryAddress,this.OrderCardPayment,this.Usercart,DeliveryTime);
+        UserOrder = new order(this.username,this.deliveryAddress,this.OrderCardPayment,this.Usercart,DeliveryTime);
         UserOrder.displayOrder();
         Usercart.removeCart();
+    }
+    public void postOrder(){
+        OrderStatus orderStatus = new OrderStatus("Order Placed");
+        Thread orderTrackingThread = new Thread(orderStatus);
+        System.out.println("Order tracking started. You will see updates shortly...");
+        orderTrackingThread.run();
+
+        UserOrder.setOrderReview(Review.collectReview());
+    }
+    public void displayOrder(){
+
     }
     public cart getCart() {
         if (Usercart == null) {

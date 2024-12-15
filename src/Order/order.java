@@ -6,24 +6,25 @@ import java.util.Scanner;
 
 public class order {
     private cart orderCart;
-    private String userID;
+    private String username;
     private String DeliveryAddress;
     private String RestaurantName;
     private String DeliveryTime;
     private CardPayment OrderPayment;
     private String transactionID;
+    private Review orderReview;
 
-    public order(String userID, String DeliveryAddress, CardPayment OrderPayment ,cart orderCart,String DeliveryTime) {
+    public order(String username, String DeliveryAddress, CardPayment OrderPayment ,cart orderCart,String DeliveryTime) {
         this.orderCart = orderCart;
         this.OrderPayment = OrderPayment;
-        this.userID = userID;
+        this.username = username;
         this.DeliveryAddress = DeliveryAddress;
         this.DeliveryTime = DeliveryTime;
         this.RestaurantName = orderCart.getRestaurantName();
     }
     public void displayOrder(){
         System.out.println("\nOrder added successfully\n");
-        System.out.println("Customer ID: " + userID);
+        System.out.println("Customer name: " + username);
         System.out.println("Restaurant Name: " + RestaurantName.toUpperCase());
         System.out.println("Delivery Address: " + DeliveryAddress);
         System.out.println("Delivery Time: " + DeliveryTime);
@@ -32,14 +33,6 @@ public class order {
         System.out.println("Order : ");
         orderCart.displayOrder();
         System.out.println("\n\n");
-
-
-        OrderStatus orderStatus = new OrderStatus("Order Placed");
-        Thread orderTrackingThread = new Thread(orderStatus);
-        System.out.println("Order tracking started. You will see updates shortly...");
-        orderTrackingThread.start();
-        Review.collectReview();
-        Review.displayReviews();
     }
 
     public order(){}
@@ -84,13 +77,6 @@ public class order {
         this.orderCart = orderCart;
     }
 
-    public String getUserID() {
-        return userID;
-    }
-    public void setUserID(String userID) {
-        this.userID = userID;
-    }
-
     public String getDeliveryAddress() {
         return DeliveryAddress;
     }
@@ -124,6 +110,12 @@ public class order {
     }
     public void setTransactionID(String transactionID) {
         this.transactionID = transactionID;
+    }
+    public Review getOrderReview() {
+        return orderReview;
+    }
+    public void setOrderReview(Review orderReview) {
+        this.orderReview = orderReview;
     }
 }
 

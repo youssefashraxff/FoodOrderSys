@@ -144,29 +144,20 @@ public class fileHandle {
     }
     //Method for writing menu item
     public static void writeMenuItemsToFile(ArrayList<menuItems> items) {
-        try
-        {
-            FileWriter userFile = new FileWriter(UserFilePath,true);
-            BufferedWriter bw = new BufferedWriter(userFile);
-
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(MenuFilePath, true))) {
             for (menuItems item : items) {
-                String line = String.join(",",
-                        String.valueOf(item.getRest_Id()), // Convert int or double to String if needed
+                String line = String.join("|",
+                        String.valueOf(item.getRest_Id()),
                         item.getName(),
                         String.valueOf(item.getPrice()),
                         item.getDescription(),
                         item.getCategory()
                 );
-
                 bw.write(line);
                 bw.newLine();
             }
-            bw.close();
-            userFile.close();
-        }
-        catch(IOException e)
-        {
-            System.out.println("Error writing customers: " + e.getMessage());
+        } catch (IOException e) {
+            System.out.println("Error writing menu items: " + e.getMessage());
         }
     }
     //Method for reading payment info

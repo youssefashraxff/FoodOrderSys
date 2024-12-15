@@ -65,8 +65,9 @@ public class foodSys
             System.out.println("\n1. Choose a restaurant");
             System.out.println("2. Filter restaurants");
             System.out.println("3. View Cart");
-            System.out.println("4. View payments");
-            System.out.println("5. Exit");
+            System.out.println("4. View Orders");
+            System.out.println("5. View payments");
+            System.out.println("6. Exit");
             System.out.print("\nEnter your choice: ");
 
             int choiceNext = getValidInt(input);
@@ -77,13 +78,15 @@ public class foodSys
                 case 3 -> {
                     if(loggedInCustomer.getCart().displayCartMenu()){
                         loggedInCustomer.addCartToOrder();
+                        loggedInCustomer.postOrder();
                     }
                 }
-                case 4 -> {if(loggedInCustomer.displayPaymentMethods()){
+                case 4 -> {}
+                case 5 -> {if(loggedInCustomer.displayPaymentMethods()){
                     loggedInCustomer.addPaymentMethod();
-                };
                 }
-                case 5 -> {
+                }
+                case 6 -> {
                     System.out.println("Goodbye!");
                     inMenu = false;
                 }
@@ -91,7 +94,26 @@ public class foodSys
             }
         }
     }
-    private static void postLoginMenu_admin(Scanner input) {}
+    private static void postLoginMenu_admin(Scanner input) {
+        boolean inMenu = true;
+        while(inMenu){
+            System.out.println("\n1. Add item");
+            System.out.println("2. Remove item");
+            System.out.println("3. Change Item Price");
+            System.out.println("4. Exit");
+            System.out.print("\nEnter your choice: ");
+
+            int choiceNext = getValidInt(input);
+            switch (choiceNext) {
+                case 1 -> {loggedInAdmin.addItem();}
+                case 2 -> {loggedInAdmin.removeItem();}
+                case 3 -> {loggedInAdmin.changePrice();}
+                case 4 -> {System.out.println("Goodbye!");
+                    inMenu = false;}
+                default -> System.out.println("Invalid option. Please try again.");
+            }
+        }
+    }
     public static int getValidInt(Scanner input) {
         while (true) {
             try {

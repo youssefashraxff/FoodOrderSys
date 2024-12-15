@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Review {
     private static final List<Review> reviews = new ArrayList<>();
 
-    private String comment;
-    private double rating;
+    private static String comment;
+    private static double rating;
 
     public Review(String comment, double rating) {
         this.comment = comment;
@@ -31,7 +31,7 @@ public class Review {
         this.rating = rating;
     }
 
-    public static void collectReview() {
+    public static Review collectReview() {
         Scanner scanner = new Scanner(System.in);
         try {
             System.out.println("Please enter your review:");
@@ -55,13 +55,11 @@ public class Review {
                     System.out.println("Invalid input. Please enter a numeric value for the rating.");
                 }
             }
-
-            Review review = new Review(comment, rating);
-            reviews.add(review);
             System.out.println("Thank you! Your review has been saved.");
         } catch (Exception e) {
             System.out.println("An unexpected error occurred: " + e.getMessage());
         }
+        return new Review(comment, rating);
     }
 
     public static void displayReviews() {

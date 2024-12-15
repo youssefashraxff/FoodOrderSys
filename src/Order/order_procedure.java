@@ -86,8 +86,6 @@ public class order_procedure {
                         input.nextLine(); // Clear invalid input from the buffer
                     }
                 }
-
-                System.out.println("\n\n"+displayMenu.getChosenRestaurantName()+"\n\n");
                 // Add the item to the user's cart
                 loggedInCustomer.getCart().addItem(new cart(
                         menuItem.getName(),
