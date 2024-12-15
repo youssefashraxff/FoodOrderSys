@@ -1,21 +1,17 @@
 package user;
 import fileHandling.fileHandle;
-import main.foodsys.foodSys;
 import payments.*;
+import Order.*;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import Order.*;
 
 public class Customer extends User {
     static Scanner input = new Scanner(System.in);
 
-    private String UserID;
-    private String email;
+    private final String UserID;
+    private final String email;
     private final String deliveryAddress;
 
     private static final List<Customer> customers = fileHandle.readUsersFromFile();
@@ -37,12 +33,6 @@ public class Customer extends User {
     //Getters and Setters
     public String getUserID() {
         return UserID;
-    }
-    public String getUsername() {
-        return username;
-    }
-    public String getPassword() {
-        return password;
     }
     public String getEmail() {
         return email;
