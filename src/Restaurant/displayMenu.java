@@ -1,4 +1,5 @@
 package Restaurant;
+import Order.Review;
 import fileHandling.fileHandle;
 import Restaurant_menu.*;
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class displayMenu {
     }
     public static void displayMenuOfRestaurant(int Rest_id) {
         ArrayList<menuItems> menu = fileHandle.readMenuItemsFromFile(Rest_id);
+        ArrayList<Review> reviews = fileHandle.readReviewFromFile(getChosenRestaurantName());
         System.out.println("\n>>> Main Item");
         for (menuItems item : menu) {
             if (item.getCategory().equals("Main Item")) {
@@ -33,6 +35,12 @@ public class displayMenu {
             if (item.getCategory().equals("Beverages")) {
                 displayMenu_attributes(item);
             }
+        }
+        System.out.println("\n>>> Reviews");
+        for (Review review : reviews){
+            System.out.println("\nCostumer name: "+review.getCustomerName());
+            System.out.println("Review: "+review.getComment());
+            System.out.println("Rating: "+review.getRating());
         }
     }
     public static int chooseRestaurant() {

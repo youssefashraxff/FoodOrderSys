@@ -1,5 +1,6 @@
 package fileHandling;
 
+import Order.Review;
 import user.*;
 import Restaurant.restaurant;
 import Restaurant_menu.*;
@@ -15,6 +16,7 @@ public class fileHandle {
     private static final String RestaurantFilePath = "./files/restaurants.txt";
     private static final String MenuFilePath = "./files/menu.txt";
     private static final String PaymentFilePath = "./files/payment_methods.txt";
+    private static final String ReviewFilePath = "./files/reviews.txt";
     //Method for reading user info
     public static List<Customer> readUsersFromFile() {
         List<Customer> customers = new ArrayList<>();
@@ -230,6 +232,55 @@ public class fileHandle {
             bw.close();
         } catch (IOException e) {
             System.out.println("Error writing payment methods: " + e.getMessage());
+        }
+    }
+    //Method for reading reviews
+    public static ArrayList<Review> readReviewFromFile(String RestaurantName) {
+        ArrayList<Review> reviews = new ArrayList<>();
+
+        try {
+            FileReader reviewFile = new FileReader(ReviewFilePath);
+            BufferedReader br = new BufferedReader(reviewFile);
+            String line = br.readLine();
+            while (line != null)
+            {
+                String[] Item_info = line.split("\\|");
+                String name = Item_info[0];
+                if(name.equalsIgnoreCase(RestaurantName))
+                {
+                    String customerName = Item_info[1];
+                    String Review = Item_info[2];
+                    double Rating = Double.parseDouble(Item_info[3]);
+
+                    reviews.add(new Review(name, customerName, Review, Rating ));
+                }
+                line = br.readLine();
+            }
+            br.close();
+            reviewFile.close();
+        }
+        catch(IOException e)
+        {
+            System.out.println("Error loading menu items: " + e.getMessage());
+        }
+        return reviews;
+    }
+    //Method for writing reviews
+    public static void writeReviewToFile( String RestaurantName, String CustomerName, String Review, double Rating) {
+        try
+        {
+            FileWriter reviewFile = new FileWriter(ReviewFilePath,true);
+            BufferedWriter bw = new BufferedWriter(reviewFile);
+
+            bw.write(RestaurantName+"|"+CustomerName+"|"+ Review +"|"+Rating+"\n");
+            bw.newLine();
+
+            bw.close();
+            reviewFile.close();
+        }
+        catch(IOException e)
+        {
+            System.out.println("Error writing customers: " + e.getMessage());
         }
     }
 }

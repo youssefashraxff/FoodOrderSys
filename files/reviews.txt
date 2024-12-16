@@ -1,0 +1,44 @@
+Koshary House|Omar|The dessert menu was delightful, especially the chocolate lava cake.|5
+Koshary House|Ali|Amazing decor and friendly staff, but the drinks were overpriced.|4
+Falafel Corner|Ali|Great coffee and a cozy atmosphere. Perfect for a casual outing.|5
+Falafel Corner|Omar|The dessert menu was delightful, especially the chocolate lava cake.|4
+Shawarma Express|Omar|I enjoyed the spicy wings; they had just the right amount of heat.|4
+Shawarma Express|Ahmed|Great coffee and a cozy atmosphere. Perfect for a casual outing.|5
+Grill Master|Omar|The ambiance was elegant, and the live music added a special touch.|4
+Grill Master|Ahmed|The portion sizes were generous, and the staff was very accommodating.|5
+Feteer Palace|Lina|Amazing decor and friendly staff, but the drinks were overpriced.|5
+Feteer Palace|Omar|The seafood platter was a bit pricey but worth it for the quality.|4
+Sweet Oasis|Lina|The vegetarian options were creative and tasted amazing.|3
+Sweet Oasis|Ali|I enjoyed the spicy wings; they had just the right amount of heat.|3
+Cafe Nil|Sara|The portion sizes were generous, and the staff was very accommodating.|5
+Cafe Nil|Ali|The service was a bit slow, but the food made up for it.|3
+Pyramids Feast|Ahmed|The ambiance was elegant, and the live music added a special touch.|5
+Pyramids Feast|Omar|The pasta was cooked to perfection, and the sauce was rich and flavorful.|5
+Baklava Heaven|Ahmed|The ambiance was elegant, and the live music added a special touch.|5
+Baklava Heaven|Lina|The burgers were juicy, and the fries were crisp and golden.|4
+McDonald's|Ali|The pasta was cooked to perfection, and the sauce was rich and flavorful.|3
+McDonald's|Ali|The dessert menu was delightful, especially the chocolate lava cake.|4
+KFC|Ahmed|I loved the breakfast menu, especially the fluffy pancakes.|5
+KFC|Ahmed|The pizza crust was crispy, and the toppings were fresh and flavorful.|5
+Pizza Hut|Lina|The steak was tender and juicy, perfectly seasoned.|5
+Pizza Hut|Sara|I enjoyed the spicy wings; they had just the right amount of heat.|5
+Hardee's|Ali|The pizza crust was crispy, and the toppings were fresh and flavorful.|3
+Hardee's|Ahmed|The vegetarian options were creative and tasted amazing.|4
+Costa Coffee|Lina|I absolutely loved the sushi; it was fresh and beautifully presented.|5
+Costa Coffee|Lina|Amazing decor and friendly staff, but the drinks were overpriced.|4
+Dunkin' Donuts|Ali|The pizza crust was crispy, and the toppings were fresh and flavorful.|5
+Dunkin' Donuts|Lina|I enjoyed the spicy wings; they had just the right amount of heat.|5
+La Bella Vita|Lina|The vegetarian options were creative and tasted amazing.|4
+La Bella Vita|Omar|I absolutely loved the sushi; it was fresh and beautifully presented.|4
+World Flavors|Lina|The ambiance was elegant, and the live music added a special touch.|3
+World Flavors|Lina|The steak was tender and juicy, perfectly seasoned.|4
+Pasta Paradise|Ahmed|The burgers were juicy, and the fries were crisp and golden.|5
+Pasta Paradise|Ali|I absolutely loved the sushi; it was fresh and beautifully presented.|4
+Pizza Roma|Omar|I enjoyed the spicy wings; they had just the right amount of heat.|5
+Pizza Roma|Sara|Great coffee and a cozy atmosphere. Perfect for a casual outing.|3
+The Global Table|Lina|The pasta was cooked to perfection, and the sauce was rich and flavorful.|5
+The Global Table|Lina|The steak was tender and juicy, perfectly seasoned.|4
+Fusion Bistro|Ahmed|The vegetarian options were creative and tasted amazing.|5
+Fusion Bistro|Lina|The pizza crust was crispy, and the toppings were fresh and flavorful.|3
+Mediterranean Marvel|Lina|The dessert menu was delightful, especially the chocolate lava cake.|3
+Mediterranean Marvel|Sara|I absolutely loved the sushi; it was fresh and beautifully presented.|5

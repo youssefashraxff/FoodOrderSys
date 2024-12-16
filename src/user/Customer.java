@@ -19,6 +19,7 @@ public class Customer extends User {
     private CardPayment OrderCardPayment;
     private cart Usercart = null;
     private order UserOrder = null;
+    private Review UserReview = new Review();
 
     public Customer(String UserId, String username, String email, String password, String deliveryAddress) {
         super(username, password);
@@ -86,7 +87,8 @@ public class Customer extends User {
         System.out.println("Order tracking started. You will see updates shortly...");
         orderTrackingThread.run();
 
-        UserOrder.setOrderReview(Review.collectReview());
+        UserOrder.setOrderReview(UserReview.collectReview(this.UserOrder.getRestaurantName(),this.getUsername()));
+
     }
     public void displayOrder(){
 

@@ -1,4 +1,5 @@
 package Restaurant;
+import Order.Review;
 import Restaurant_menu.*;
 import fileHandling.fileHandle;
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ public class restaurant {
     private double rating;
     private String category;
     private ArrayList<menuItems> items;
+    private ArrayList<Review> reviews;
 
     public restaurant(int Id,String name, String address, String contact, double rating, String category) {
         this.Id = Id;
@@ -19,7 +21,6 @@ public class restaurant {
         this.contact = contact;
         this.rating = rating;
         this.category = category;
-        //items = fileHandle.readMenuItemsFromFile(Id);
     }
     public int getId() {
         return Id;
