@@ -103,7 +103,7 @@
 11|Chicken Nuggets|29.0|Chicken Nuggets: A signature main item crafted with the finest ingredients, offering an authentic taste experience.|Main Item
 11|Fries|91.0|Crispy golden potato fries, lightly seasoned with salt and served hot.|Main Item
 11|Mashed Potatoes|68.0|Mashed Potatoes: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
-11|Corn|96.0|Corn: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
+11|Corn|100.0|Corn: A signature sides crafted with the finest ingredients, offering an authentic taste experience.|Sides
 11|Soda|32.0|Soda: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
 11|Milkshake|50.0|Milkshake: A signature beverages crafted with the finest ingredients, offering an authentic taste experience.|Beverages
 11|Sundae|75.0|Creamy vanilla ice cream topped with rich chocolate or caramel sauce.|Desserts

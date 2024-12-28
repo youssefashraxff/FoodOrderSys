@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="bg" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.loginController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/style.css">
+         <center>
+            <VBox alignment="CENTER" prefHeight="276.0" prefWidth="721.0" scaleShape="false" spacing="20.0" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="title" alignment="CENTER" styleClass="title" text="Create new account" textAlignment="CENTER">
+                     <font>
+                        <Font name="NexaBold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameField" alignment="TOP_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="305.0" promptText="Username" styleClass="textField" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="NexaLight" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="emailField" alignment="TOP_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="305.0" promptText="Email" styleClass="textField">
+                     <font>
+                        <Font name="NexaLight" size="13.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="passwordField" alignment="TOP_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="305.0" promptText="Password" styleClass="textField">
+                     <font>
+                        <Font name="NexaLight" size="13.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="createAccountButton" alignment="CENTER" minWidth="43.0" mnemonicParsing="false" onAction="#handleRegisterProcess" prefHeight="33.0" prefWidth="305.0" styleClass="createAccountButton" stylesheets="@../css/style.css" text="Create your account" textFill="WHITE">
+                     <font>
+                        <Font name="NexaLight" size="13.0" />
+                     </font></Button>
+                  <Label fx:id="backToLogin" alignment="CENTER" onMouseClicked="#handleBackToLogin" styleClass="backToLogin" text="Back to Login" textAlignment="CENTER">
+                     <font>
+                        <Font name="SF Pro Display Regular" size="10.0" />
+                     </font>
+                  </Label>
+                  <VBox alignment="CENTER" prefHeight="39.0" prefWidth="347.0">
+                     <children>
+                        <Label fx:id="errorLabelRegister" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="274.0" textAlignment="CENTER" textFill="RED" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <VBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="462.0" styleClass="topPane" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="18.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" styleClass="logo">
+                     <image>
+                        <Image url="@../image/Orderoo_Logo_White.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

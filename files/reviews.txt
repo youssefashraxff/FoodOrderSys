@@ -42,3 +42,7 @@ Fusion Bistro|Ahmed|The vegetarian options were creative and tasted amazing.|5
 Fusion Bistro|Lina|The pizza crust was crispy, and the toppings were fresh and flavorful.|3
 Mediterranean Marvel|Lina|The dessert menu was delightful, especially the chocolate lava cake.|3
 Mediterranean Marvel|Sara|I absolutely loved the sushi; it was fresh and beautifully presented.|5
+kfc|youssef|good|4.0
+
+kfc|youssef|good|5.0
+

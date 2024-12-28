@@ -1,0 +1,33 @@
+.bg{
+    -fx-background-color: #FFFDF0;
+}
+.loginButton, .createAccountButton{
+    -fx-background-color: #C62E2E;
+    -fx-border-radius: 100%;
+    -fx-font-family: "Nexa Bold";
+}
+.loginButton:hover{
+    -fx-background-color: #F95454;
+}
+.topPane{
+    -fx-background-color:#C62E2E ;
+    -fx-padding: 0 0 0 20;
+}
+.menu{
+    -fx-alignment: center-right;
+    -fx-padding: 0 10 0 0;
+}
+.backToLogin{
+    -fx-text-fill:#C62E2E;
+    -fx-font-family: "Nexa Light";
+}
+.CreateNewAccount{
+    -fx-text-fill:#C62E2E ;
+    -fx-font-family: "Nexa Light";
+}
+.textField{
+    -fx-font-family: "Nexa Light";
+}
+.title{
+    -fx-font-family: "Nexa Bold";
+}

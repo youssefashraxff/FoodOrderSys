@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="bg" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.dashboardController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="601.0" stylesheets="@../css/style.css">
+         <top>
+            <AnchorPane styleClass="topPane" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER_LEFT" layoutX="29.0" prefHeight="35.0" prefWidth="165.0">
+                     <children>
+                        <ImageView fitHeight="18.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" styleClass="logo">
+                           <image>
+                              <Image url="@../image/Orderoo_Logo_White.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="548.0" layoutY="6.0" prefHeight="24.0" prefWidth="29.0">
+                     <children>
+                        <ImageView fitHeight="18.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" styleClass="logo">
+                           <image>
+                              <Image url="@../image/menu_Icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="510.0" layoutY="7.0" prefHeight="23.0" prefWidth="29.0">
+                     <children>
+                        <ImageView fitHeight="18.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" styleClass="search">
+                           <image>
+                              <Image url="@../image/search_Icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
