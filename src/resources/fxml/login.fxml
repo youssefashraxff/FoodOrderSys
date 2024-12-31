@@ -11,23 +11,23 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefWidth="600.0" styleClass="bg" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.loginController">
+<AnchorPane maxHeight="720.0" maxWidth="1080.0" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="Layout" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.loginController">
    <children>
-      <BorderPane layoutX="1.0" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+      <BorderPane layoutX="1.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="Layout" stylesheets="@../css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
          <center>
-            <VBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="337.0" scaleShape="false" spacing="20.0" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="487.0" scaleShape="false" spacing="20.0" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
                <children>
-                  <Label alignment="CENTER" styleClass="title" text="Login" textAlignment="CENTER">
+                  <Label fx:id="title" alignment="CENTER" prefHeight="29.0" prefWidth="60.0" styleClass="title" text="Login" textAlignment="CENTER">
                      <font>
                         <Font name="NexaBold" size="18.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="usernameField" alignment="TOP_LEFT" centerShape="false" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="305.0" promptText="Username" scaleShape="false" styleClass="textField">
+                  <TextField fx:id="emailField" alignment="TOP_LEFT" centerShape="false" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="305.0" promptText="Email (@sample.com)" scaleShape="false" styleClass="textField">
                      <font>
                         <Font name="NexaLight" size="13.0" />
                      </font>
                   </TextField>
-                  <PasswordField fx:id="passwordField" alignment="TOP_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="305.0" promptText="Password" styleClass="textField">
+                  <PasswordField fx:id="passwordField" alignment="TOP_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="305.0" promptText="Password (8 characters at least)" styleClass="textField">
                      <font>
                         <Font name="NexaLight" size="13.0" />
                      </font>
@@ -38,24 +38,28 @@
                         <Font name="SF Pro Display Regular" size="10.0" />
                      </font>
                   </Label>
-                  <VBox alignment="CENTER" prefHeight="39.0" prefWidth="347.0">
+                  <VBox alignment="CENTER" maxWidth="-Infinity" prefHeight="23.0" prefWidth="317.0">
                      <children>
-                        <Label fx:id="errorLabelLogin" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="274.0" textAlignment="CENTER" textFill="RED" />
+                        <Label fx:id="errorLabelLogin" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="274.0" styleClass="errorLabel" textAlignment="CENTER" textFill="RED" />
                      </children>
                   </VBox>
                </children>
             </VBox>
          </center>
          <top>
-            <VBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="598.0" styleClass="topPane" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="48.0" prefWidth="1080.0" styleClass="topPane" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="18.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" styleClass="logo">
-                     <image>
-                        <Image url="@../image/Orderoo_Logo_White.png" />
-                     </image>
-                  </ImageView>
+                  <VBox alignment="CENTER_LEFT" layoutX="86.0" layoutY="8.0" prefHeight="27.0" prefWidth="83.0">
+                     <children>
+                        <ImageView fitHeight="18.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" styleClass="logo">
+                           <image>
+                              <Image url="@../image/Orderoo_Logo_White.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
                </children>
-            </VBox>
+            </AnchorPane>
          </top>
       </BorderPane>
    </children>

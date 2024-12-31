@@ -29,7 +29,7 @@ public class fileHandle {
             while (line != null) {
                 String[] user_info = line.split(",");
                 if (user_info.length >= 5) {
-                    customers.add(new Customer(user_info[0], user_info[1], user_info[2], user_info[3], user_info[4]));
+                    customers.add(new Customer(user_info[0], user_info[1], user_info[2], user_info[3], user_info[4], user_info[5],user_info[6]));
                 }
                 line = br.readLine();
             }
@@ -43,8 +43,8 @@ public class fileHandle {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(UserFilePath))) {
             // Write each customer's details to the file
             for (Customer customer : customers) {
-                bw.write(customer.getUserID() + "," + customer.getUsername() + "," + customer.getEmail() + "," +
-                        customer.getPassword() + "," + customer.getDeliveryAddress());
+                bw.write(customer.getUserID() + "," + customer.getUsername() + "," +customer.getLastName()+","+ customer.getEmail() + "," +
+                        customer.getPassword() + "," +customer.getPhoneNumber()+","+ customer.getDeliveryAddressForFile());
                 bw.newLine(); // Add a new line after each customer
             }
             System.out.println("Customers written to file successfully!");
@@ -67,7 +67,7 @@ public class fileHandle {
             while (line != null) {
                 String[] admin_info = line.split(",");
                 if (admin_info.length >= 2) {
-                    admins.add(new Admin(admin_info[0], admin_info[1]));
+                    admins.add(new Admin(admin_info[0], admin_info[1],admin_info[2]));
                 }
                 line = br.readLine();
             }

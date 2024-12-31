@@ -6,6 +6,7 @@ import app.models.Order.order;
 import app.models.fileHandling.fileHandle;
 import app.models.payments.CardPayment;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -13,8 +14,9 @@ public class Customer extends User {
     static Scanner input = new Scanner(System.in);
 
     private final String UserID;
-    private final String email;
-    private final String deliveryAddress;
+    private String email;
+    private String deliveryAddress;
+    private String phoneNumber;
 
     private ArrayList<order> orders = new ArrayList<>();
     private ArrayList<CardPayment> UserCardPayments = new ArrayList<>();
@@ -23,11 +25,12 @@ public class Customer extends User {
     private order UserOrder = null;
     private Review UserReview = new Review();
 
-    public Customer(String UserId, String username, String email, String password, String deliveryAddress) {
-        super(username, password);
+    public Customer(String UserId, String username,String lastName ,String email, String password,String phoneNumber ,String deliveryAddress) {
+        super(username, lastName,password);
         this.UserID = UserId;
         this.email = email;
         this.deliveryAddress = deliveryAddress;
+        this.phoneNumber = phoneNumber;
         Usercart = new cart();
         UserOrder = new order();
         OrderCardPayment = new CardPayment();
@@ -41,9 +44,14 @@ public class Customer extends User {
         return email;
     }
     public String getDeliveryAddress() {
+        if(this.deliveryAddress.equals("null")){
+            return "";
+        }
+        else return deliveryAddress;
+    }
+    public String getDeliveryAddressForFile(){
         return deliveryAddress;
     }
-
     //Customer Methods
     public void addPaymentMethod(){
         CardPayment tempCard = new CardPayment();
@@ -111,6 +119,27 @@ public class Customer extends User {
     }
     public void setCart(cart cart) {
         this.Usercart = cart;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber=phoneNumber;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setDeliveryAddress(String deliveryAddress) {
+        this.deliveryAddress = deliveryAddress;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        Customer c = (Customer) o;
+        return this.UserID.equals(c.UserID);
     }
 }
 

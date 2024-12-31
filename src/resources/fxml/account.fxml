@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.accountController">
+   <children>
+      <BorderPane prefHeight="720.0" prefWidth="1080.0">
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <top>
+                  <AnchorPane prefHeight="66.0" prefWidth="1080.0" styleClass="accountTitleBorder" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="133.0" layoutY="27.0" prefHeight="85.0" prefWidth="182.0" styleClass="accountTitle" text="My Account" />
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="412.0" prefWidth="527.0" styleClass="accountBox" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="525.0" styleClass="accountDetailsBox">
+                           <children>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="316.0" prefWidth="233.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="233.0">
+                                       <children>
+                                          <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" styleClass="accountLabels" text="First Name" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="233.0">
+                                       <children>
+                                          <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" styleClass="accountLabels" text="Last Name" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="233.0">
+                                       <children>
+                                          <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" styleClass="accountLabels" text="Email Adress " />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="233.0">
+                                       <children>
+                                          <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" styleClass="accountLabels" text="Password" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="233.0">
+                                       <children>
+                                          <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" styleClass="accountLabels" text="Delivery Address" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="233.0">
+                                       <children>
+                                          <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" styleClass="accountLabels" text="Phone Number" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="316.0" prefWidth="233.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="49.0" prefWidth="233.0">
+                                       <children>
+                                          <TextField fx:id="firstNameLabel" styleClass="accountLabels" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="49.0" prefWidth="233.0">
+                                       <children>
+                                          <TextField fx:id="LastNameLabel" styleClass="accountLabels" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="49.0" prefWidth="233.0">
+                                       <children>
+                                          <TextField fx:id="emailLabel" styleClass="accountLabels" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="49.0" prefWidth="233.0">
+                                       <children>
+                                          <TextField fx:id="passwordLabel" styleClass="accountLabels" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="49.0" prefWidth="233.0">
+                                       <children>
+                                          <TextField fx:id="addressLabel" styleClass="accountLabels" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="49.0" prefWidth="233.0">
+                                       <children>
+                                          <TextField fx:id="phoneNumber" styleClass="accountLabels" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Button fx:id="applyChangesButton" alignment="CENTER" minWidth="43.0" mnemonicParsing="false" onAction="#applyChanges" prefHeight="33.0" prefWidth="132.0" styleClass="applyChangeButton" stylesheets="@../css/style.css" text="Apply changes" textFill="WHITE">
+                        </Button>
+                        <Label fx:id="applyChangeLabel" styleClass="applyChangeLabel" />
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <HBox prefHeight="86.0" prefWidth="1080.0" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="48.0" prefWidth="1080.0" styleClass="topPane" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER_LEFT" layoutX="86.0" layoutY="8.0" prefHeight="27.0" prefWidth="83.0">
+                     <children>
+                        <ImageView fx:id="Logo" fitHeight="18.0" fitWidth="92.0" onMouseClicked="#backToDashboard" onMousePressed="#backToDashboard" pickOnBounds="true" preserveRatio="true" styleClass="logo">
+                           <image>
+                              <Image url="@../image/Orderoo_Logo_White.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="926.0" layoutY="11.0" prefHeight="24.0" prefWidth="56.0">
+                     <children>
+                        <ImageView fitHeight="18.0" fitWidth="28.0" onMouseClicked="#toggleMenu" pickOnBounds="true" preserveRatio="true" styleClass="logo">
+                           <image>
+                              <Image url="@../image/menu_Icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="884.0" layoutY="12.0" prefHeight="23.0" prefWidth="29.0">
+                     <children>
+                        <ImageView fitHeight="18.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true" styleClass="search">
+                           <image>
+                              <Image url="@../image/search_Icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+      <AnchorPane layoutX="807.0" layoutY="50.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="274.0" prefWidth="259.0">
+         <children>
+            <VBox fx:id="menuDropdown" alignment="CENTER" layoutX="61.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="195.0" prefWidth="171.0" spacing="20.0" styleClass="context-menu" visible="false">
+               <children>
+                  <Button fx:id="accountButton" graphicTextGap="20.0" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#handleAccount" styleClass="menuButton" textFill="black">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@../image/account_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <text>Account</text>
+                  </Button>
+                  <Button graphicTextGap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="menuButton" textFill="black">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@../image/cart_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <text>Cart</text>
+                  </Button>
+                  <Button graphicTextGap="20.0" maxHeight="-Infinity" minHeight="-Infinity" styleClass="menuButton" textFill="black">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@../image/payment_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <text>Payment</text>
+                  </Button>
+
+
+                  <Button fx:id="backLoginButton" graphicTextGap="20.0" onMouseClicked="#backLogin" prefWidth="90.0" styleClass="menuButton" textFill="black">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0">
+                           <image>
+                              <Image url="@../image/logout_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <text>Logout</text>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

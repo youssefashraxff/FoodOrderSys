@@ -11,8 +11,8 @@ public class Admin extends User {
     private ArrayList<menuItems> items = new ArrayList<>();
     private final ArrayList<restaurant> restaurants = fileHandle.readRestaurantFromFile();
 
-    public Admin(String username, String password) {
-        super(username, password);
+    public Admin(String username,String lastName, String password) {
+        super(username, lastName,password);
     }
 
     private int selectRestaurantAndDisplayMenu() {

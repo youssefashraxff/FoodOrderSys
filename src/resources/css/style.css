@@ -1,12 +1,13 @@
-.bg{
-    -fx-background-color: #FFFDF0;
+.Layout{
+    -fx-background-color: #f3f3f3;
 }
-.loginButton, .createAccountButton{
+.loginButton, .createAccountButton, .applyChangeButton{
     -fx-background-color: #C62E2E;
-    -fx-border-radius: 100%;
-    -fx-font-family: "Nexa Bold";
+    -fx-border-radius: 10;
+    -fx-font-family: "Avenir";
+    -fx-font-weight: 300;
 }
-.loginButton:hover{
+.loginButton:hover, .createAccountButton:hover, .applyChangeButton:hover{
     -fx-background-color: #F95454;
 }
 .topPane{
@@ -19,15 +20,92 @@
 }
 .backToLogin{
     -fx-text-fill:#C62E2E;
-    -fx-font-family: "Nexa Light";
+    -fx-font-family: "Avenir";
+    -fx-font-weight: 200;
+    -fx-font-size: 11px;
 }
-.CreateNewAccount{
-    -fx-text-fill:#C62E2E ;
-    -fx-font-family: "Nexa Light";
+.backToLogin:hover{
+    -fx-text-fill:#F95454 ;
+    -fx-font-size: 11px;
 }
 .textField{
     -fx-font-family: "Nexa Light";
 }
 .title{
     -fx-font-family: "Nexa Bold";
+}
+.context-menu {
+    -fx-background-color: #f3f3f3;
+    -fx-border-color: #aeaeae;
+    -fx-border-width: 0.5;
+    -fx-border-radius: 10;
+    -fx-padding: 0 5 0 5;
+}
+.menuButton {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER_LEFT;
+    -fx-pref-width: 100;
+    -fx-pref-height: 24;
+    -fx-border-radius: 10;
+}
+
+.menuButton:hover {
+    -fx-border-radius: 10;
+    -fx-background-color: #ffd0d0;
+}
+
+.menuButton .text{
+    -fx-font-family: "Avenir";
+    -fx-font-weight: 300;
+    -fx-text-fill: #000000;
+    -fx-font-size: 10px;
+}
+.CreateNewAccount{
+    -fx-font-family: "Avenir";
+    -fx-font-weight: 200;
+    -fx-text-fill:#C62E2E ;
+    -fx-font-size: 11px;
+}
+.CreateNewAccount:hover{
+    -fx-text-fill:#F95454 ;
+    -fx-font-size: 11px;
+}
+.errorLabel {
+    fx-font-family: "Avenir";
+    -fx-font-weight: 200;
+    -fx-text-fill:#C62E2E ;
+    -fx-font-size: 11px;
+}
+.accountTitle{
+    -fx-font-family: "Avenir";
+    -fx-font-weight: 300;
+    -fx-font-size: 30;
+    -fx-text-fill: #000000;
+}
+.accountTitleBorder{
+    -fx-border-color: #B7B7B7 ;
+    -fx-border-width: 0 0 1 0;
+}
+.accountLabels{
+    -fx-font-family: "Avenir";
+    -fx-font-weight: 200;
+    -fx-text-fill: #000000;
+    -fx-font-size: 11px;
+}
+.accountDetailsBox{
+    -fx-padding: 0 0 0 0;
+}
+.accountBox{
+    -fx-border-color: #aeaeae;
+    -fx-border-width: 0.5;
+    -fx-border-radius: 10;
+}
+.applyChangeLabel{
+    -fx-padding: 10 0 0 0;
+    -fx-font-size: 10px;
+    -fx-font-family: "Avenir";
+    -fx-font-weight: 100;
+    -fx-text-fill: green;
 }
